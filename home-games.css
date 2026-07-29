@@ -1,0 +1,180 @@
+.home-game-discovery {
+  padding: 64px 16px;
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 50% 0, rgba(200, 21, 42, 0.09), transparent 38%),
+    var(--dark-bg);
+}
+
+.home-games-inner,
+.home-categories-inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.home-game-group + .home-game-group {
+  margin-top: 52px;
+}
+
+.home-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.home-group-header h2,
+.home-categories-inner h2 {
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(11px, 1.7vw, 15px);
+  line-height: 1.6;
+}
+
+.home-group-header a {
+  flex-shrink: 0;
+  color: var(--amber);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+.home-group-header a:hover,
+.home-group-header a:focus-visible {
+  color: var(--gold);
+}
+
+.home-game-grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-game-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.home-game-card:hover,
+.home-game-card:focus-visible {
+  border-color: var(--crimson);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35), 0 0 18px var(--glow);
+  transform: translateY(-3px);
+}
+
+.home-game-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.home-game-card:hover img,
+.home-game-card:focus-visible img {
+  transform: scale(1.04);
+}
+
+.home-game-card span {
+  display: flex;
+  min-height: 62px;
+  padding: 12px;
+  align-items: center;
+  color: var(--text-main);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.55;
+}
+
+.home-category-overview {
+  padding: 60px 16px 72px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--mid-bg);
+}
+
+.home-categories-inner h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-category-card {
+  display: flex;
+  min-height: 84px;
+  padding: 18px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.home-category-card span {
+  color: var(--text-muted);
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.home-category-card:hover,
+.home-category-card:focus-visible {
+  border-color: var(--crimson);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1050px) {
+  .home-game-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .home-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .home-game-discovery,
+  .home-category-overview {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .home-game-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .home-group-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .home-category-grid {
+    grid-template-columns: 1fr;
+  }
+}

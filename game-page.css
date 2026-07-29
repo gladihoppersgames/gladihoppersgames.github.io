@@ -1,0 +1,303 @@
+:root {
+  --crimson: #c8152a;
+  --gold: #f5c842;
+  --amber: #e8833a;
+  --dark-bg: #0a0205;
+  --card-bg: #1a080b;
+  --border: #3a1218;
+  --text-main: #e8d4b8;
+  --text-muted: #a88972;
+  --glow: rgba(200, 21, 42, 0.35);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: var(--dark-bg);
+  color: var(--text-main);
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+body::before {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.06) 2px, rgba(0, 0, 0, 0.06) 4px);
+  content: "";
+  pointer-events: none;
+}
+
+.game-page {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  padding: 28px 0 14px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.breadcrumb li + li::before {
+  margin-right: 8px;
+  color: var(--crimson);
+  content: "›";
+}
+
+.breadcrumb a {
+  color: var(--amber);
+  text-decoration: none;
+}
+
+.game-title {
+  margin: 18px 0 28px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(23px, 4.5vw, 45px);
+  line-height: 1.3;
+  text-shadow: 4px 4px 0 #650b18, 0 0 24px var(--glow);
+}
+
+.player-shell {
+  overflow: hidden;
+  border: 2px solid var(--crimson);
+  border-radius: 9px;
+  background: #000;
+  box-shadow: 0 0 30px var(--glow);
+}
+
+.player-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 420px;
+}
+
+.player-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border: 0;
+}
+
+.player-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+  background: #100406;
+}
+
+.player-source {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.fullscreen-button {
+  padding: 9px 13px;
+  border: 1px solid var(--crimson);
+  border-radius: 4px;
+  background: #24080d;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.game-content-section {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: clamp(44px, 7vw, 70px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.game-content-section h2,
+.related-section h2 {
+  margin-bottom: 20px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(15px, 2.5vw, 23px);
+  line-height: 1.5;
+}
+
+.game-content-section p {
+  margin-top: 16px;
+}
+
+.controls-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.controls-list li {
+  padding: 11px 15px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--card-bg);
+}
+
+.how-list {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  counter-reset: steps;
+}
+
+.how-list li {
+  position: relative;
+  padding: 18px 20px 18px 66px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  counter-increment: steps;
+}
+
+.how-list li::before {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  color: var(--crimson);
+  content: "0" counter(steps);
+  font-family: "Press Start 2P", monospace;
+  font-size: 11px;
+}
+
+.how-list strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--amber);
+}
+
+.related-section {
+  padding: clamp(48px, 7vw, 76px) 0;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.related-card:hover,
+.related-card:focus-visible {
+  border-color: var(--crimson);
+  transform: translateY(-3px);
+}
+
+.related-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.related-card span {
+  display: block;
+  min-height: 58px;
+  padding: 12px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.site-footer {
+  padding: 34px 20px 28px;
+  border-top: 2px solid var(--border);
+  background: #060103;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--gold);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  color: #6d5547;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .related-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .player-frame {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 520px) {
+  .game-page {
+    width: calc(100% - 24px);
+  }
+
+  .player-frame {
+    min-height: 240px;
+  }
+
+  .player-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

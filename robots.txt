@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://gladihoppersgames.github.io/sitemap.xml
+
+# Host
+Host: https://gladihoppersgames.github.io

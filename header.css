@@ -1,0 +1,246 @@
+.site-header {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px clamp(16px, 3vw, 44px);
+  border-bottom: 2px solid #3a1218;
+  background: linear-gradient(180deg, #0d0204 0%, #1a0408 100%);
+}
+
+.site-header .logo-area {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 12px;
+  color: #f5c842;
+  text-decoration: none;
+}
+
+.site-header .logo-area img {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #c8152a;
+  border-radius: 5px;
+  image-rendering: pixelated;
+}
+
+.site-header .logo-text {
+  color: #f5c842;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  line-height: 1.45;
+  text-shadow: 0 0 12px rgba(245, 200, 66, 0.45);
+}
+
+.site-header .logo-text span {
+  display: block;
+  margin-top: 3px;
+  color: #e8833a;
+  font-size: 7px;
+}
+
+.header-tools {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.site-header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(11px, 1.4vw, 20px);
+}
+
+.site-header .main-nav > a,
+.more-menu summary,
+.more-menu a {
+  color: #a88972;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 160ms ease;
+}
+
+.site-header .main-nav > a:hover,
+.site-header .main-nav > a:focus-visible,
+.site-header .main-nav > a[aria-current="page"],
+.more-menu summary:hover,
+.more-menu summary:focus-visible,
+.more-menu[open] summary,
+.more-menu a:hover,
+.more-menu a:focus-visible,
+.more-menu a[aria-current="page"] {
+  color: #f5c842;
+}
+
+.more-menu {
+  position: relative;
+}
+
+.more-menu summary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.more-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-menu summary::after {
+  color: #c8152a;
+  content: "▼";
+  font-size: 6px;
+  transition: transform 160ms ease;
+}
+
+.more-menu[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.more-menu-items {
+  display: grid;
+  position: absolute;
+  top: calc(100% + 13px);
+  right: 0;
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #3a1218;
+  border-radius: 6px;
+  background: #160609;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.more-menu-items a {
+  padding: 10px 11px;
+  border-radius: 4px;
+}
+
+.more-menu-items a:hover,
+.more-menu-items a:focus-visible {
+  background: #240a0f;
+}
+
+.site-search {
+  display: flex;
+  flex: 0 0 clamp(160px, 17vw, 225px);
+  align-items: stretch;
+  min-width: 150px;
+  border: 1px solid #3a1218;
+  border-radius: 5px;
+  background: #090204;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.site-search:focus-within {
+  border-color: #c8152a;
+  box-shadow: 0 0 0 3px rgba(200, 21, 42, 0.16);
+}
+
+.site-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #e8d4b8;
+  font: 15px "Crimson Pro", Georgia, serif;
+}
+
+.site-search input::placeholder {
+  color: #80614f;
+  opacity: 1;
+}
+
+.site-search button {
+  display: grid;
+  flex: 0 0 36px;
+  place-items: center;
+  border: 0;
+  border-left: 1px solid #3a1218;
+  background: transparent;
+  color: #f5c842;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.site-search button:hover,
+.site-search button:focus-visible {
+  background: #240a0f;
+}
+
+.search-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .site-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .header-tools {
+    flex: 1 1 720px;
+  }
+
+  .site-header .main-nav {
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .site-header {
+    gap: 12px;
+  }
+
+  .header-tools {
+    width: 100%;
+    flex: 1 1 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .site-header .main-nav {
+    justify-content: flex-start;
+    padding: 3px 2px 7px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .site-search {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .more-menu-items {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header .logo-text span {
+    display: none;
+  }
+}

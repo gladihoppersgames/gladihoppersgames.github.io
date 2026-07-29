@@ -1,0 +1,1174 @@
+{
+  "source": "https://www.wgplayground.com/",
+  "retrieved": "2026-07-29",
+  "categories": {
+    "action": [
+      {
+        "title": "Military Strike",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/284319b4611644d3c87feee95afb3ada/wgplayground/6d6384fd1ff33ee05f20403d9aa23583.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/military-strike"
+      },
+      {
+        "title": "World Wars - Tanks",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d99f34ff2a2ee1dfe5748ac73b26172c/wgplayground/7c425a733e76e91f2d5b064affae55ed.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/world-wars-tanks"
+      },
+      {
+        "title": "CS: Command Snipers",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/426c394eacdca2cf6fe6113780e20882/wgplayground/ad7c78fad22cb2c1a918570e9de7e44d.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/cs-command-snipers"
+      },
+      {
+        "title": "FPS Toy Realism",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3f85058b0fceb41f958925d988c372a0/wgplayground/723ce41407ae283c3fa5d4fe654c3e1e.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/fps-toy-realism"
+      },
+      {
+        "title": "Dead Walker: Zombie Shooter",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a13f875698d11c23ab890d3dfc2663ba/wgplayground/6b4cdeb847a8121f53171944ac276c86.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/dead-walker-zombie-shooter"
+      },
+      {
+        "title": "Zombies: Battle for Survival",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/6ff93821a7cb6da73f3e067cbcf24a4b/wgplayground/1faddbfce0cdd1a1f1347e70b9f0f57d.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/zombies-battle-for-survival"
+      },
+      {
+        "title": "Real Car Simulator Traffic Games",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/7e067c8cf16d816dfc2bd93fadf2ccab/wgplayground/ce3f348c2bd076142d4772fd7c02d9ed.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/real-car-simulator-traffic-games"
+      },
+      {
+        "title": "CS: Chaos Squad",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/826f3c0b1b4774251773cf31671eb67d/wgplayground/bb3c1c8c8cc77a11329a23d1ef528e21.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/cs-chaos-squad"
+      },
+      {
+        "title": "Screw Out Master - Story Puzzle",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/86adbdb2a1dd4c7360e80a16f9b6730f/wgplayground/1f23c581f203330b98c46a5fa0613a2d.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/screw-out-master-story-puzzle"
+      },
+      {
+        "title": "Brawl Bros Squad",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/62260f22a767f2087ad38bcb399291aa/wgplayground/69b4379e252f92ed2f8d5d53f7bac933.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/brawl-bros-squad"
+      },
+      {
+        "title": "Robby: Bomberman",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4c3e3ab9a6b629cf7c8d7db7fc4bafcd/wgplayground/cc69772ffa2ee58b926831ffb19c66b1.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/robby-bomberman"
+      },
+      {
+        "title": "Delta Force Airborne",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/23d59dc383e9318683a2ab37eacef8b9/wgplayground/1a0c26d2190563f26be4060ab74fd8a4.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/delta-force-airborne"
+      },
+      {
+        "title": "Vexon",
+        "publisher": "LUCKY TRY",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a7ae750e0acb798e13ea47d778a5739c/wgplayground/041473940b7109425fd890a889db48b4.jpg",
+        "url": "https://www.wgplayground.com/game/lucky-try/vexon"
+      },
+      {
+        "title": "Strykon",
+        "publisher": "LUCKY TRY",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/62a6c43aa0a58f9f5c875c3ef1f9f0f2/wgplayground/c26f3a973d0a1859b35ab7b9c5bd1a83.jpg",
+        "url": "https://www.wgplayground.com/game/lucky-try/strykon"
+      },
+      {
+        "title": "Commando Force 2",
+        "publisher": "LUCKY TRY",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/8f66fc9ec6754c65e7a3aec7ab463a2e/wgplayground/a0caecda380d1d39bddce722fca940f6.jpg",
+        "url": "https://www.wgplayground.com/game/lucky-try/commando-force-2"
+      },
+      {
+        "title": "Battle Shot Elite",
+        "publisher": "LUCKY TRY",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a7276c39a1e62ad0843cebe11ed3db3f/wgplayground/700d141ca52e6c7c575ce69c1bd34875.jpg",
+        "url": "https://www.wgplayground.com/game/lucky-try/battle-shot-elite"
+      },
+      {
+        "title": "FRAGEN",
+        "publisher": "LUCKY TRY",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2b09118f62fcdb697a7deae6c3d8e43e/wgplayground/80755fe7da691e28febdb44174eb972a.jpg",
+        "url": "https://www.wgplayground.com/game/lucky-try/fragen"
+      },
+      {
+        "title": "Coin Merge Machine",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/290aa764552bfdfa721749f4d339bbdd/wgplayground/a161c638c353d6ff212ced4ebbdb6948.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/coin-merge-machine"
+      },
+      {
+        "title": "Warfare 1942 - online shooter",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2e8935eb95926955842ef1a1e866e4e4/wgplayground/08b0574f2f594dacafe3dee2c62b2431.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/warfare-1942-online-shooter"
+      },
+      {
+        "title": "Chicken Strike",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/f3416440e423b28a44c6463381ac8815/wgplayground/259b7f678aa0d6919b219fa3a1f40087.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/chicken-strike"
+      },
+      {
+        "title": "Hazmob.io",
+        "publisher": "Hazmob",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/b7491702970e3b0b6de397f80a0a1844/wgplayground/9773b8616f3f17d98f05adf05577bc3c.jpg",
+        "url": "https://www.wgplayground.com/game/hazmob/hazmob-io"
+      },
+      {
+        "title": "Galaxy Warriors",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c6de136853649409dd74d8c4bfe544f5/wgplayground/0dd0560b6f64663847f85b626544a99d.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/galaxy-warriors"
+      },
+      {
+        "title": "King Kong Kart Racing",
+        "publisher": "MarketJS",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/8a7d33f4e87371d4fcf6aeecbf8e13bd/wgplayground/9c3301f10ef98673eabb1f60da808db1.jpg",
+        "url": "https://www.wgplayground.com/game/marketjs/king-kong-kart-racing"
+      },
+      {
+        "title": "Galactic Attack",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/df860e68072d3624650a02df59c465f0/wgplayground/7a634201383e40f35823fb38f72cfa60.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/galactic-attack"
+      }
+    ],
+    "adventure": [
+      {
+        "title": "Vega Mix Adventure",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/aeec5f7c889e7287c76c84cfb99e1a9a/wgplayground/f611dae0cff88513f088035b439e4163.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/vega-mix-adventure"
+      },
+      {
+        "title": "Dead Walker: Zombie Shooter",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a13f875698d11c23ab890d3dfc2663ba/wgplayground/6b4cdeb847a8121f53171944ac276c86.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/dead-walker-zombie-shooter"
+      },
+      {
+        "title": "Robby: Bomberman",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4c3e3ab9a6b629cf7c8d7db7fc4bafcd/wgplayground/cc69772ffa2ee58b926831ffb19c66b1.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/robby-bomberman"
+      },
+      {
+        "title": "DTA 2: Maniac",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/cd7de98995c9d38cfb50a41084775383/wgplayground/246d5e3e3447e5c69a29e03363cc09f9.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/dta-2-maniac"
+      },
+      {
+        "title": "Epic Mine",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/49eec34ac0937a50020392fffa523ac3/wgplayground/628ec1a8cf657aab00f2ddd588a9af9f.png",
+        "url": "https://www.wgplayground.com/game/gamepush/epic-mine"
+      },
+      {
+        "title": "Minion Escape",
+        "publisher": "OLIUL ISLAM",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/31a30fada602b8dd1cd67bd158dadfce/wgplayground/a55a9219d85ae7d965d59e45debafad3.jpg",
+        "url": "https://www.wgplayground.com/game/oliul-islam/minion-escape"
+      },
+      {
+        "title": "Castle Story",
+        "publisher": "GamesMunch",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/75ee08d7ec8c82cd009c2f1008191e2c/wgplayground/27ae0f55bbff044cbdf249a96a9aac1b.jpg",
+        "url": "https://www.wgplayground.com/game/gamesmunch/castle-story"
+      },
+      {
+        "title": "Anime Horror Escape",
+        "publisher": "Mirra Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0c0b89f8a48b4bf74f201aad3b88facd/wgplayground/a63c80fb6be62edd8447d0ce7ab5df07.jpg",
+        "url": "https://www.wgplayground.com/game/mirra-games/anime-horror-escape"
+      },
+      {
+        "title": "Prison Escape: Island of Tribes",
+        "publisher": "Studio Of the Hawk",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d6d40ac033cc5f1286f0a740e27485c8/wgplayground/7033991d4688fef4bf05e3fc36e3b0e0.jpg",
+        "url": "https://www.wgplayground.com/game/studio-of-the-hawk/prison-escape-island-of-tribes"
+      },
+      {
+        "title": "Shoot the Duck",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5f03c5f05d2868c1653fe03e57831359/wgplayground/ea36e24be41848f7989897a46ff5d828.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/shoot-the-duck"
+      },
+      {
+        "title": "Freddy's Chronicles",
+        "publisher": "First Pixel",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e8a4f9b068631cb1888221a24ea8e0e8/wgplayground/a104a0b8a8250b48ae67a1b32ebab8e4.jpg",
+        "url": "https://www.wgplayground.com/game/first-pixel/freddys-chronicles"
+      },
+      {
+        "title": "Tower Defense Clash",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3913a14bf707b9c2082fad893ab3f042/wgplayground/e5d0feef5dcf44c95f74167fafdfdf81.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/tower-defense-clash"
+      },
+      {
+        "title": "Scary escape",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/26e6d3c20ec4893f73f406f0777bcb47/wgplayground/d96cd90a35b97c00d1e60d2fe6249410.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/scary-escape"
+      },
+      {
+        "title": "Crossy chicken",
+        "publisher": "MKSoft",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ef90dc6f847866edda56260615fee92f/wgplayground/upscaled_66e15a3803e42a5200b5236903e4eb41.jpeg",
+        "url": "https://www.wgplayground.com/game/mksoft/crossy-chicken"
+      },
+      {
+        "title": "Adventures of Flig",
+        "publisher": "RAD BROTHERS",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/352f25708e342b1cdd40318f2a5f0263/wgplayground/d1f677f4515a5c73c7661ebb701fc193.jpg",
+        "url": "https://www.wgplayground.com/game/rad-brothers/adventures-of-flig"
+      },
+      {
+        "title": "Soul Essence Adventure",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1eb160d0041021ce6cba75fd110f3edd/wgplayground/6c0db38f54d120520053989e3a785d33.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/soul-essence-adventure"
+      },
+      {
+        "title": "Ducklings.io",
+        "publisher": "Pelican Party",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2aa628667b1cbafec726ee738c4a37cc/wgplayground/9495b2b60c93baef5cc896805fe8a8fb.jpg",
+        "url": "https://www.wgplayground.com/game/pelican-party/ducklings-io"
+      },
+      {
+        "title": "Zombie Shoot Haunted House",
+        "publisher": "NapTech Labs",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0048221ef6f5bc0be05ec6255ffdfa24/wgplayground/27732710fde5e919cb8ab97f59d17f0a.jpg",
+        "url": "https://www.wgplayground.com/game/naptech-labs/zombie-shoot-haunted-house"
+      },
+      {
+        "title": "The Farmer Craft",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/6811cf5ec9864227a6b38614e8606784/wgplayground/3bc1f777bbdb97e516cfee57f49aa696.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/the-farmer-craft"
+      },
+      {
+        "title": "Maze of Death",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c1a39dd6996b63807a6058f7022aaf35/wgplayground/32f9f27951e76f338209a47e4e8ced80.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/maze-of-death"
+      },
+      {
+        "title": "Hero's Journey",
+        "publisher": "BestGamesFreePlay",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ab5bf29d2a77fe8d100b2519474ff7da/wgplayground/d7da87916065234172af239356f5a538.jpg",
+        "url": "https://www.wgplayground.com/game/bestgamesfreeplay/heros-journey"
+      },
+      {
+        "title": "Path Control",
+        "publisher": "Argon Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e004890f554022276c00c1620374ecd2/wgplayground/80a06df17a835c289f234adcf183fee2.jpg",
+        "url": "https://www.wgplayground.com/game/argon-games/path-control"
+      },
+      {
+        "title": "Traffic Jam",
+        "publisher": "Argon Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e5e8edaaa442fb1452271dec9b2d4ed2/wgplayground/97b8ed118f9482ca8bdc05da1484dea1.jpg",
+        "url": "https://www.wgplayground.com/game/argon-games/traffic-jam"
+      },
+      {
+        "title": "Puzzlix: Shape Fitting Puzzle",
+        "publisher": "CrazyCubix.com",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a6d76d4f35fe59290f6515e06c586fe7/wgplayground/86d02dddce1a12a11ad3aca18e791367.jpg",
+        "url": "https://www.wgplayground.com/game/crazycubix-com/puzzlix-shape-fitting-puzzle"
+      }
+    ],
+    "arcade": [
+      {
+        "title": "Military Strike",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/284319b4611644d3c87feee95afb3ada/wgplayground/6d6384fd1ff33ee05f20403d9aa23583.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/military-strike"
+      },
+      {
+        "title": "World Wars - Tanks",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d99f34ff2a2ee1dfe5748ac73b26172c/wgplayground/7c425a733e76e91f2d5b064affae55ed.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/world-wars-tanks"
+      },
+      {
+        "title": "Loop Ghost",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/d82135390f1f077763bec09e4501ec9e.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/loop-ghost"
+      },
+      {
+        "title": "Blocks Merge Puzzle 2048",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/4543537fe596a2932565532cd1ccaa63.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/blocks-merge-puzzle-2048"
+      },
+      {
+        "title": "Savage Defenders",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4d441808701ca712215375cf688c3815/wgplayground/3903648b84a0d2bfa75ecfbc6ede24a9.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/savage-defenders"
+      },
+      {
+        "title": "Pixel Journey",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/63eb918fabf0e9846eb6f6f34de6bdec/wgplayground/cc9c3195a001db598ae431d3fdc189a3.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/pixel-journey"
+      },
+      {
+        "title": "Europe at War",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/861c34f57a7fecf1d4110fbeea15b7a4/wgplayground/2d7246b8fb7f9d1c9f0af4b1fab4a98c.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/europe-at-war"
+      },
+      {
+        "title": "Solitaire Pro Plus",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/30ff30e8736ddf186d8eac15e8eef0bf/wgplayground/88848c1672f7977119beec7aa95ef895.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/solitaire-pro-plus"
+      },
+      {
+        "title": "Ping Pong Air",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/f2d8bc1acb2f450d3d5a3c150301cd0c/wgplayground/a6a574a734bbe3021f6b8273df49b06a.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/ping-pong-air"
+      },
+      {
+        "title": "Happy Fluffy Cubes",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e1bef1844648f2f44fb31fe19aa2babc/wgplayground/49cccb2db4f4893319f4deefa2719bf2.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/happy-fluffy-cubes"
+      },
+      {
+        "title": "Hidden Pairs Mahjong",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d1a174a185ae6db1d16c13df1730b6a4/wgplayground/ea1414ed8eff42e598a3e1b5b35a51a7.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/hidden-pairs-mahjong"
+      },
+      {
+        "title": "CS: Command Snipers",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/426c394eacdca2cf6fe6113780e20882/wgplayground/ad7c78fad22cb2c1a918570e9de7e44d.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/cs-command-snipers"
+      },
+      {
+        "title": "FPS Toy Realism",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3f85058b0fceb41f958925d988c372a0/wgplayground/723ce41407ae283c3fa5d4fe654c3e1e.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/fps-toy-realism"
+      },
+      {
+        "title": "Tap Tap Racing",
+        "publisher": "Peace D",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d80eb5762c2736600e7174322a28b183/wgplayground/f001375bd3b505693971a52d0a919422.jpg",
+        "url": "https://www.wgplayground.com/game/peace-d/tap-tap-racing"
+      },
+      {
+        "title": "Golf Mini",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d7a909a564adcb2d9902380a53176241/wgplayground/3884458e0ec48aa12277e5d9d6dc8960.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/golf-mini"
+      },
+      {
+        "title": "Real Car Simulator Traffic Games",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/7e067c8cf16d816dfc2bd93fadf2ccab/wgplayground/ce3f348c2bd076142d4772fd7c02d9ed.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/real-car-simulator-traffic-games"
+      },
+      {
+        "title": "Robby: Bomberman",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4c3e3ab9a6b629cf7c8d7db7fc4bafcd/wgplayground/cc69772ffa2ee58b926831ffb19c66b1.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/robby-bomberman"
+      },
+      {
+        "title": "Block LEGENDS!",
+        "publisher": "Realinspirer",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4f91cb0a388374b876ea41ee07ec3d4a/wgplayground/a20e9c7ba3be52f95d47a82cc88be6af.jpg",
+        "url": "https://www.wgplayground.com/game/realinspirer/block-legends"
+      },
+      {
+        "title": "Tile Hex World: Red vs Blue",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/f556af3ce0d1e09b5944304011020e76/wgplayground/64db0bbae629bc6fa43834d88c286753.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/tile-hex-world-red-vs-blue"
+      },
+      {
+        "title": "Zombie Derby Pixel Survival",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/60689d5ae0f5ba2ad09c6ec598efbc6f/wgplayground/6ccd7701aa509c7939b8306f43b9f255.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/zombie-derby-pixel-survival"
+      },
+      {
+        "title": "DTA 2: Maniac",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/cd7de98995c9d38cfb50a41084775383/wgplayground/246d5e3e3447e5c69a29e03363cc09f9.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/dta-2-maniac"
+      },
+      {
+        "title": "Hex Wars",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/69828ad770baa40355d235d68fe0e8c2/wgplayground/7bbb3fd7874daaeb253c7da8ae5bb098.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/hex-wars"
+      },
+      {
+        "title": "Star Exiles",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/35a3c5507383edcfcb6be84b619fbb9f/wgplayground/e58ea36f104d25aa3b22e8be7b9555c1.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/star-exiles"
+      },
+      {
+        "title": "Dino Survival: 3D Simulator",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/dd2e95a20414250900ddf75386d497fb/wgplayground/dd39162f78f11df34958ddac2b2e02c8.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/dino-survival-3d-simulator"
+      }
+    ],
+    "cars": [
+      {
+        "title": "Route 66 Russian Traffic",
+        "publisher": "SAFING",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/30db8a884f9888845f63636a384cf629/wgplayground/598c4bca17f054e6f8348732a8a4735f.jpg",
+        "url": "https://www.wgplayground.com/game/safing/route-66-russian-traffic"
+      },
+      {
+        "title": "Formula Racers",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/07816883c23506562051062e9f7d2552/wgplayground/038b932a9ef6d9555d543b33fe3ec482.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/formula-racers"
+      },
+      {
+        "title": "Tap Tap Racing",
+        "publisher": "Peace D",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d80eb5762c2736600e7174322a28b183/wgplayground/f001375bd3b505693971a52d0a919422.jpg",
+        "url": "https://www.wgplayground.com/game/peace-d/tap-tap-racing"
+      },
+      {
+        "title": "Real Car Simulator Traffic Games",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/7e067c8cf16d816dfc2bd93fadf2ccab/wgplayground/ce3f348c2bd076142d4772fd7c02d9ed.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/real-car-simulator-traffic-games"
+      },
+      {
+        "title": "DTA 2: Maniac",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/cd7de98995c9d38cfb50a41084775383/wgplayground/246d5e3e3447e5c69a29e03363cc09f9.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/dta-2-maniac"
+      },
+      {
+        "title": "King Kong Kart Racing",
+        "publisher": "MarketJS",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/8a7d33f4e87371d4fcf6aeecbf8e13bd/wgplayground/9c3301f10ef98673eabb1f60da808db1.jpg",
+        "url": "https://www.wgplayground.com/game/marketjs/king-kong-kart-racing"
+      },
+      {
+        "title": "Drift Boss",
+        "publisher": "MarketJS",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/559c2625fa8c452ce1cbd663f25e17ad/wgplayground/9f9d287cdbf98342e0a4dfa5ef09c75c.jpg",
+        "url": "https://www.wgplayground.com/game/marketjs/drift-boss"
+      },
+      {
+        "title": "Road Madness",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3f143854f0c5f5f07d2f9c09e44b1163/wgplayground/d676d5df0c1ae7a098fd6b1397dd896f.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/road-madness"
+      },
+      {
+        "title": "Drift Fury",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/78643c9ae11e43c1d611cd17ced98034/wgplayground/9ffba7988acdd4cc963583a658d64d66.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/drift-fury"
+      },
+      {
+        "title": "Supercars Drift",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/959cb3fe386c861e627dd918ce5fa7c9/wgplayground/60e0bed2847c1b67aa008bb5a117d2b7.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/supercars-drift"
+      },
+      {
+        "title": "2 Player Crazy Racer",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e359043d79f00af5c9ecdc90458e3516/wgplayground/057d62db8546ead17ee66cdefcde8c1b.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/2-player-crazy-racer"
+      },
+      {
+        "title": "Drift No Limit: Car Racing",
+        "publisher": "Stepa Mobile FZE LLC",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/86e0a4b88cbc0f563e2386321472e271/wgplayground/a0eb4c81c287a452eb87d397542c547d.jpg",
+        "url": "https://www.wgplayground.com/game/stepa-mobile-fze-llc/drift-no-limit-car-racing"
+      },
+      {
+        "title": "Road Fury",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a418388ec4a2c4b069b0b12812fc5c02/wgplayground/383db7abe8114f593213a07db7bd1d8f.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/road-fury"
+      },
+      {
+        "title": "Burnout Drift Hunter",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c67cb1338ee7fab0f84739cc9451cc2f/wgplayground/061328c04cf62965672f1944e2b1c5dc.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/burnout-drift-hunter"
+      },
+      {
+        "title": "Crazy Drifter",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5d6531db069d7977c1f9600d4823a37c/wgplayground/587cbe9b575bb97119a7dc5a7ae1abdc.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/crazy-drifter"
+      },
+      {
+        "title": "Traffic Jam",
+        "publisher": "Argon Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e5e8edaaa442fb1452271dec9b2d4ed2/wgplayground/97b8ed118f9482ca8bdc05da1484dea1.jpg",
+        "url": "https://www.wgplayground.com/game/argon-games/traffic-jam"
+      },
+      {
+        "title": "Tractor Delivery",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ea279982d16776b6253fe12301de5300/wgplayground/c24765ebfbafa4d47f08b89a772382ad.png",
+        "url": "https://www.wgplayground.com/game/new-kids-games/tractor-delivery"
+      },
+      {
+        "title": "Crime Wars San Andreas",
+        "publisher": "Starodymov",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4d2d5eef38a32ef598e5de3d36dff605/wgplayground/2ee92ad33a41cf6488ff99e11beb1c8d.jpg",
+        "url": "https://www.wgplayground.com/game/starodymov/crime-wars-san-andreas"
+      },
+      {
+        "title": "Drift Boss 3D",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5eebb54710ec50fc5857563e171c0ae3/wgplayground/1b267b62477b4aec9b743704823f11e2.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/drift-boss-3d"
+      },
+      {
+        "title": "Road hustle: Wild checkers",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2843c694c7bc9a536701baf1d78a81fa/wgplayground/4b5ff5bf52871f036298380d8c737760.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/road-hustle-wild-checkers"
+      },
+      {
+        "title": "Car Line Rider",
+        "publisher": "VideoIgrice",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5b2d54a14e18b3ad1beeec90d23deaa0/wgplayground/d3abef40335d304d47a1941e7d30a22b.jpg",
+        "url": "https://www.wgplayground.com/game/videoigrice/car-line-rider"
+      },
+      {
+        "title": "Tap Race Duel",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3f8d0f1dd2153cb2a4e2111c65bffbb5/wgplayground/2c6d486c72535b4dc844e1a56a5ced11.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/tap-race-duel"
+      },
+      {
+        "title": "Cool Tuning - Paint the Car",
+        "publisher": "Welwise Studio",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ff0e2a67ade09a519cbad31249a6254d/wgplayground/156d2ded31ed41827bee30d3a4603a47.jpg",
+        "url": "https://www.wgplayground.com/game/welwise-studio/cool-tuning-paint-the-car"
+      },
+      {
+        "title": "Delivery Now",
+        "publisher": "Tiny Castle Studio",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/7fdac1ed8c2e450a77c76f011334cbcf/wgplayground/ef0d3ba21343df60a335654572fee9c2.jpg",
+        "url": "https://www.wgplayground.com/game/tiny-castle-studio/delivery-now"
+      }
+    ],
+    "sports": [
+      {
+        "title": "Russian Fishing New",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/25564434361680d756a58941a5dd79f9/wgplayground/b4494582c18fc8f0de79eece3301be5f.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/russian-fishing-new"
+      },
+      {
+        "title": "Formula Racers",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/07816883c23506562051062e9f7d2552/wgplayground/038b932a9ef6d9555d543b33fe3ec482.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/formula-racers"
+      },
+      {
+        "title": "Fishing the Russian Way",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d9721f66a3a64c32bd531584cdd16e09/wgplayground/b3068422f7e2c8d98670528c3db9c0f6.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/fishing-the-russian-way"
+      },
+      {
+        "title": "Tap Tap Racing",
+        "publisher": "Peace D",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d80eb5762c2736600e7174322a28b183/wgplayground/f001375bd3b505693971a52d0a919422.jpg",
+        "url": "https://www.wgplayground.com/game/peace-d/tap-tap-racing"
+      },
+      {
+        "title": "Golf Mini",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d7a909a564adcb2d9902380a53176241/wgplayground/3884458e0ec48aa12277e5d9d6dc8960.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/golf-mini"
+      },
+      {
+        "title": "Monster golf",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/88e61de9b1668b1294e54ee45786dea0/wgplayground/bc3cfc5dcc64b77e68647a24492d2025.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/monster-golf"
+      },
+      {
+        "title": "Russian Fishing at Sea",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c87569ab8636a033c9a92bd569eade20/wgplayground/c73be8ab3564d58961efe021a236fa2f.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/russian-fishing-at-sea"
+      },
+      {
+        "title": "Nitro Burnout",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/abf8f507d4fdf642845de0056d4c5f07/wgplayground/f22b15526b3a6fd3728ca4a993d9a41f.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/nitro-burnout"
+      },
+      {
+        "title": "Correct Football",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/bbe1c86f78a7c174236bca6422f3cc26/wgplayground/338030f5c599992e86813793bc23b84f.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/correct-football"
+      },
+      {
+        "title": "Tiny Football Cup",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e4310232649e47822870f25ef2808f9a/wgplayground/9f4d9a9cfd3ba78d36fdfb12d8579977.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/tiny-football-cup"
+      },
+      {
+        "title": "Stunt Rider",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/475bdd5ec5d6abbea27a402c7f1f5e22/wgplayground/d7336947ae4af0b88b7bbca92301409f.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/stunt-rider"
+      },
+      {
+        "title": "Minigolf Clash",
+        "publisher": "Inlogic Software",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/dcfe1727f559cd0d67dfa34ba7dfca61/wgplayground/111918de8905cfe4ee05cb3c7e9fe9af.jpg",
+        "url": "https://www.wgplayground.com/game/inlogic-software/minigolf-clash"
+      },
+      {
+        "title": "Drift No Limit: Car Racing",
+        "publisher": "Stepa Mobile FZE LLC",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/86e0a4b88cbc0f563e2386321472e271/wgplayground/a0eb4c81c287a452eb87d397542c547d.jpg",
+        "url": "https://www.wgplayground.com/game/stepa-mobile-fze-llc/drift-no-limit-car-racing"
+      },
+      {
+        "title": "Fish rain",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/967dd12fc467c572c3e6fbbd6e060974/wgplayground/df29438ad3aff398b5eff5dfb4809155.jpeg",
+        "url": "https://www.wgplayground.com/game/gamepush/fish-rain"
+      },
+      {
+        "title": "The Best Russian Billiards",
+        "publisher": "dreamteamdevelopers",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1c4e1260dd6963b345a4f9a7e576a513/wgplayground/f87734d036c1723409e07c55c8cdda50.jpg",
+        "url": "https://www.wgplayground.com/game/dreamteamdevelopers/the-best-russian-billiards"
+      },
+      {
+        "title": "Soccer King",
+        "publisher": "Argon Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/fd5da869715266fc8f0504d17819af9d/wgplayground/d5fa5379ecb930969d3c0e0b82814149.jpg",
+        "url": "https://www.wgplayground.com/game/argon-games/soccer-king"
+      },
+      {
+        "title": "Tennis Star",
+        "publisher": "Argon Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5636fac894b70f5093d4187d007d59b6/wgplayground/fe896c277a199bfb1b7c9e7e58b26bdc.jpg",
+        "url": "https://www.wgplayground.com/game/argon-games/tennis-star"
+      },
+      {
+        "title": "Billiard Challenge",
+        "publisher": "RandomGames",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/03c9b7b97d0bdb958cc8488b60cb788d/wgplayground/467c22f0b0ac2836b345d100ee6c61eb.jpg",
+        "url": "https://www.wgplayground.com/game/randomgames/billiard-challenge"
+      },
+      {
+        "title": "Obby: Pump Up Your Muscles! +1 per second",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/978ad2301f601ae393dec2b854913fe9/wgplayground/7b229d80fcc68f85a121aba94ebd42c5.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/obby-pump-up-your-muscles-1-per-second"
+      },
+      {
+        "title": "Moon League Sports Season",
+        "publisher": "Dl Girls",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/6eb34c90174da663da5dbf97dc12565c/wgplayground/93e2fcd997360bc95f9dcd755897afcf.jpg",
+        "url": "https://www.wgplayground.com/game/dl-girls/moon-league-sports-season"
+      },
+      {
+        "title": "Bonnie Fitness Frenzy",
+        "publisher": "Dl Girls",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a1008095bdb2b6d3d9ea8196b6ce23f3/wgplayground/165ad94292ef61546fd02c40f50df910.jpg",
+        "url": "https://www.wgplayground.com/game/dl-girls/bonnie-fitness-frenzy"
+      },
+      {
+        "title": "Max Crusher 2 - Destruction, Drift, and Racing!",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/b3dc5890e493f937bb9046f0db9e57a5/wgplayground/3238c2d311d5d4e185ca927b3fdb6730.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/max-crusher-2-destruction-drift-and-racing"
+      },
+      {
+        "title": "Head Ball 2026",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/fa0f9f80e83eb793857fed7cdd520532/wgplayground/6df8ee97bb9d8597a963fba1fa0d44f3.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/head-ball-2026"
+      },
+      {
+        "title": "Winter Fishing",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/433cb021e6f98c27c9d81cd1e82399d7/wgplayground/aae0305825efbb788fe5142da2020132.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/winter-fishing"
+      }
+    ],
+    "horror": [
+      {
+        "title": "Purrrification",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0181e8fcc77a9546c284c89695e98bc0/wgplayground/0185fc64300e6a5719d019722dc7aa2d.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/purrrification"
+      },
+      {
+        "title": "Anime Horror Escape",
+        "publisher": "Mirra Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0c0b89f8a48b4bf74f201aad3b88facd/wgplayground/a63c80fb6be62edd8447d0ce7ab5df07.jpg",
+        "url": "https://www.wgplayground.com/game/mirra-games/anime-horror-escape"
+      },
+      {
+        "title": "Freddy's Chronicles",
+        "publisher": "First Pixel",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e8a4f9b068631cb1888221a24ea8e0e8/wgplayground/a104a0b8a8250b48ae67a1b32ebab8e4.jpg",
+        "url": "https://www.wgplayground.com/game/first-pixel/freddys-chronicles"
+      },
+      {
+        "title": "Maze of Death",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c1a39dd6996b63807a6058f7022aaf35/wgplayground/32f9f27951e76f338209a47e4e8ced80.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/maze-of-death"
+      },
+      {
+        "title": "In Space",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3d9719f16f68274410db2246ed5e31e6/wgplayground/5401b318d6f824a7d39845556b88c3a9.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/in-space"
+      },
+      {
+        "title": "The Last Miner",
+        "publisher": "First Pixel",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/74207f0d7f8fcdd86de3777314d58980/wgplayground/43f91967e4b1b184688f3ab104f2b062.png",
+        "url": "https://www.wgplayground.com/game/first-pixel/the-last-miner"
+      },
+      {
+        "title": "Nightmare Bedtime",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/9d2fe3d530fb556d8d547c2a15404487/wgplayground/2f785be1743df3aa4c5e1aa199a9a3da.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/nightmare-bedtime"
+      },
+      {
+        "title": "Boo Scared 3: New Year with Schoolboy",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0c7c678ed85b3582885dd27aa8696c92/wgplayground/a816355e9b644b28f029787d24a69e2a.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/boo-scared-3-new-year-with-schoolboy"
+      },
+      {
+        "title": "Anomaly Search",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/251e98e0824e3469aaa0e15276968a38/wgplayground/39dc735b1cfe12e2a9c0fbb40faa55df.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/anomaly-search"
+      },
+      {
+        "title": "Don't Shoot",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0556b5b72713d0ce9ea789b5edd14290/wgplayground/d84b062e4122431f22101a23ca38f86e.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/dont-shoot"
+      },
+      {
+        "title": "Strange packages",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/38add5d3df9abf597bee10c5b9ffd6dd/wgplayground/28ee583f95d97d339468b09a24b713f7.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/strange-packages"
+      },
+      {
+        "title": "Boo, Scared? Escape from Backrooms",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5efcccf449aabaf261e053a8d3682272/wgplayground/8b30a320101c4dbb4369588bdee71868.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/boo-scared-escape-from-backrooms"
+      },
+      {
+        "title": "Goal.io",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/68342f8831ae48730d777dee2651af64/wgplayground/2661946fe3ab9d383d34ad56337a1d2a.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/goal-io"
+      },
+      {
+        "title": "Haunted Brainrot 3D",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/07f0f64c5acc090adf40229c453ce664/wgplayground/997e45b4037351f59d672250ac05d8fa.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/haunted-brainrot-3d"
+      },
+      {
+        "title": "Hungry Shark Hunt",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d20f0b675494d0e54aace2b56978c8eb/wgplayground/f5db4282e45d2d41b880432130c0885a.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/hungry-shark-hunt"
+      },
+      {
+        "title": "Finnie Escape",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/f058df7edb1b72fd3d840d512becc59f/wgplayground/8b7b2c9aaae274c40323a0719c5c9efe.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/finnie-escape"
+      },
+      {
+        "title": "Zombie Easter Bunnies",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/85d0a3301e76214547b2672d9a135fd0/wgplayground/b3c2961c0258ea8f5090363fdc882ae7.jpg",
+        "url": "https://www.wgplayground.com/game/pitigamedev/zombie-easter-bunnies"
+      },
+      {
+        "title": "Horror Eye",
+        "publisher": "Zorlex",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/9b983035c1b2b59069449900e15b6329/wgplayground/54fffe5dd24eb830cc978a7f46dad3ba.jpg",
+        "url": "https://www.wgplayground.com/game/zorlex/horror-eye"
+      },
+      {
+        "title": "Deep in the lab - Chapter 1",
+        "publisher": "Pitigamedev",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/cc7821fa0d6a64605f72b80ade3f669a/wgplayground/c39db0df853446327f9d45c26235c661.png",
+        "url": "https://www.wgplayground.com/game/pitigamedev/deep-in-the-lab-chapter-1"
+      },
+      {
+        "title": "Spooky Tile Master",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/5f9e672bb31caca3a480ac934297764a/wgplayground/ea658bbe12eee7329351dcf6c15f7216.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/spooky-tile-master"
+      },
+      {
+        "title": "Spooky Slider",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4a8f1c4b8d2f74b11375328ce506c038/wgplayground/66269b0eecff8cadb785aa29108b60a9.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/spooky-slider"
+      },
+      {
+        "title": "Demonic Mahjong",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/855cf3f5101726015302522d3bf1b848/wgplayground/019ffd1611b1fb88c84c2a76700260d6.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/demonic-mahjong"
+      },
+      {
+        "title": "Poppy Playtime Horror Orphanage",
+        "publisher": "Kiz10",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/25d5a1fb89ebcdfa2acdae6bf06547f2/wgplayground/0eb5d075b5f954152ef41968d1d8278a.jpg",
+        "url": "https://www.wgplayground.com/game/kiz10/poppy-playtime-horror-orphanage"
+      },
+      {
+        "title": "Scary Neighbour",
+        "publisher": "Mirra Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/135aade9f9980fd7737b8dba9b9340d6/wgplayground/8f4d420a381952e0962bba8e8e5654d2.jpg",
+        "url": "https://www.wgplayground.com/game/mirra-games/scary-neighbour"
+      }
+    ],
+    "puzzles": [
+      {
+        "title": "Coin Merge",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/3c8ad17b5773e896565ada8f6fed12e4.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/coin-merge"
+      },
+      {
+        "title": "Bolts - Unscrew It",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/b8b5aadeb982aba3daa33be5b83638a8/wgplayground/6dd8d93a4981e9946eb24c45ba5813d3.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/bolts-unscrew-it"
+      },
+      {
+        "title": "Mate in Chess",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/46b9d2ee972d852e28dc7a2926f93c29/wgplayground/edc9bf97840b669a0c8442240066a3ef.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/mate-in-chess"
+      },
+      {
+        "title": "Fruit Cafe: Match 3",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ff18b9a7c50332512fe2f7e1c780c413/wgplayground/4e0c13c72378339803d3a072862afa2b.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/fruit-cafe-match-3"
+      },
+      {
+        "title": "HexaFill",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/54375b997808f24ceffb10fdb5363b17/wgplayground/f4fb2d17c063a1f71d9c5ab9ccdc8b66.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/hexafill"
+      },
+      {
+        "title": "Arrows Escaper",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/041768e3c3d0c151225e14831a659027/wgplayground/226eab4fe29514791df8d88641fa98c9.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/arrows-escaper"
+      },
+      {
+        "title": "Loop Ghost",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/d82135390f1f077763bec09e4501ec9e.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/loop-ghost"
+      },
+      {
+        "title": "Arrow puzzle",
+        "publisher": "Green Train",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/a4f91db9121485999e19ae7218041578/wgplayground/d411e51cdc082aaf5c05af9f6140dc92.jpg",
+        "url": "https://www.wgplayground.com/game/green-train/arrow-puzzle"
+      },
+      {
+        "title": "Cubica",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4fc4ffb122ae7b5fb6071dddf01ec643/wgplayground/187c066d57524a027772b4b32cd54170.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/cubica"
+      },
+      {
+        "title": "Solitaire Pro Plus",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/30ff30e8736ddf186d8eac15e8eef0bf/wgplayground/88848c1672f7977119beec7aa95ef895.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/solitaire-pro-plus"
+      },
+      {
+        "title": "Magic Forest - Merge the Secrets",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/6beb5254295bc74aa2c5413f078f2852/wgplayground/05efe8eb75ed2508e83d620958383688.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/magic-forest-merge-the-secrets"
+      },
+      {
+        "title": "Mind Games: Math Crosswords",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/dadc31c03da1beddbeaa6e6f3b4194de/wgplayground/94c7892c04edc0ad58b58c6db24abc76.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/mind-games-math-crosswords"
+      },
+      {
+        "title": "Mahjong Classic",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/43b7e5ec648ecc832dc8e30edbec2fb1/wgplayground/3aa2728129af6967df55f99014634819.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/mahjong-classic"
+      },
+      {
+        "title": "Slide the Ball",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/cfa8054b3694bf85338137df3ad4b781/wgplayground/bdaa8de2b89819ea3c39e2f3c0daab05.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/slide-the-ball"
+      },
+      {
+        "title": "2048: Number Merge",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4ca8d7bebc00c76ed3ea8fd83c9ac2f9/wgplayground/975fcd87ff7e84e2aa53a719c583289c.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/2048-number-merge"
+      },
+      {
+        "title": "Cryptogram",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/82312088f5ade803e9ffd81236d5458c/wgplayground/6ba95d1502a84e47fcaa5dc93ebe7ede.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/cryptogram"
+      },
+      {
+        "title": "Vega Mix Adventure",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/aeec5f7c889e7287c76c84cfb99e1a9a/wgplayground/f611dae0cff88513f088035b439e4163.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/vega-mix-adventure"
+      },
+      {
+        "title": "Just Mahjong",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/792de36074b5fe2614b8a035b5dfd55f/wgplayground/e556af5dd111d4c354ba2a64ae7c5d4e.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/just-mahjong"
+      },
+      {
+        "title": "Spellmind",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d3b887bcf8de96191eb1f3efec6aa2e6/wgplayground/429d8cbbec5b0903e111f4c75ba3bc21.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/spellmind"
+      },
+      {
+        "title": "Hidden Pairs Mahjong",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d1a174a185ae6db1d16c13df1730b6a4/wgplayground/ea1414ed8eff42e598a3e1b5b35a51a7.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/hidden-pairs-mahjong"
+      },
+      {
+        "title": "Colors pins",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/4eae55f567929af226f32c78c58e252f/wgplayground/bbe96fb7bc52c87bd16fae728f3bca47.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/colors-pins"
+      },
+      {
+        "title": "Screw Out Master - Story Puzzle",
+        "publisher": "GMG Studios",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/86adbdb2a1dd4c7360e80a16f9b6730f/wgplayground/1f23c581f203330b98c46a5fa0613a2d.jpg",
+        "url": "https://www.wgplayground.com/game/gmg-studios/screw-out-master-story-puzzle"
+      },
+      {
+        "title": "Overflowing Palette",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/3d96c436ff423972200a6c3b83cba8e8/wgplayground/0c9ae171583220ad3f731f3359991273.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/overflowing-palette"
+      },
+      {
+        "title": "Kingdom match",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/2916009ed073d17ae49a64371ee96e10/wgplayground/1695b5c2abc53101d13c249ac9a2db5a.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/kingdom-match"
+      }
+    ],
+    "2players": [
+      {
+        "title": "Classic chess",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1ce9b478c12c8b056b80938e61f6cff3/wgplayground/aa15fe06d116616e49a33af4fa29eb16.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/classic-chess"
+      },
+      {
+        "title": "Correct Football",
+        "publisher": "MathNook",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/bbe1c86f78a7c174236bca6422f3cc26/wgplayground/338030f5c599992e86813793bc23b84f.jpg",
+        "url": "https://www.wgplayground.com/game/mathnook/correct-football"
+      },
+      {
+        "title": "2 Player Crazy Racer",
+        "publisher": "FreezeNova",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e359043d79f00af5c9ecdc90458e3516/wgplayground/057d62db8546ead17ee66cdefcde8c1b.jpg",
+        "url": "https://www.wgplayground.com/game/freezenova/2-player-crazy-racer"
+      },
+      {
+        "title": "The Best Russian Billiards",
+        "publisher": "dreamteamdevelopers",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1c4e1260dd6963b345a4f9a7e576a513/wgplayground/f87734d036c1723409e07c55c8cdda50.jpg",
+        "url": "https://www.wgplayground.com/game/dreamteamdevelopers/the-best-russian-billiards"
+      },
+      {
+        "title": "Stick Archer GiantHunt",
+        "publisher": "tapgames",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/09181655df05cb847c5874a2fd52feba/wgplayground/961d642c77dd15a5cb2e240425e9c71a.jpg",
+        "url": "https://www.wgplayground.com/game/tapgames/stick-archer-gianthunt"
+      },
+      {
+        "title": "Geography quiz: countries, flags, capitals",
+        "publisher": "RandomGames",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/0ad93877888faa78a43946f806a7fafb/wgplayground/e2903c765b788a23e871dafa42db3622.jpg",
+        "url": "https://www.wgplayground.com/game/randomgames/geography-quiz-countries-flags-capitals"
+      },
+      {
+        "title": "The end of the tunnel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/aea8484e285dcf1bf783f1ee68b59017/wgplayground/68f93cc8bcdb4c1d4ec9fdb027117732.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/the-end-of-the-tunnel"
+      },
+      {
+        "title": "Cyvasse: Chess ice and flame",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/e9f8cb16ee026db7cbc6e6f1b4e0c9c1/wgplayground/97ee0a2755929d4a1de30d45be84df4b.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/cyvasse-chess-ice-and-flame"
+      },
+      {
+        "title": "Head Ball 2026",
+        "publisher": "New Kids Games",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/fa0f9f80e83eb793857fed7cdd520532/wgplayground/6df8ee97bb9d8597a963fba1fa0d44f3.jpg",
+        "url": "https://www.wgplayground.com/game/new-kids-games/head-ball-2026"
+      },
+      {
+        "title": "Gala: Farm chess",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ccc882ecfafdbe4175f1eb17951e0ab1/wgplayground/9665e243dc2cd9b7e2ec94445b61f9e7.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/gala-farm-chess"
+      },
+      {
+        "title": "Hexagonal chess",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/c7718d9fb9d13aa241913abaa3f208a2/wgplayground/bb3fd69f4c5221747206ac8863f1912f.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/hexagonal-chess"
+      },
+      {
+        "title": "Paper Wars: Battles and Upgrades",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/f520fb06d5b42bf869e4bf9566a1c88b/wgplayground/3740bb39fbd9d34219d07807d18ebd58.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/paper-wars-battles-and-upgrades"
+      },
+      {
+        "title": "Nubik: Create Your Place",
+        "publisher": "kbvpneofit",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d23dceb077c4de8f85ea473b3f1c3c87/wgplayground/e36502d0c04b78b415c4345005681be9.jpg",
+        "url": "https://www.wgplayground.com/game/kbvpneofit/nubik-create-your-place"
+      },
+      {
+        "title": "Shogi: Japanese Chess",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1a0f3070bb33bb742c577a55a63c2c66/wgplayground/6bd7a7a595f4ca7d696b3530ae1a58df.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/shogi-japanese-chess"
+      },
+      {
+        "title": "Triminos, dominoes triangles",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/275a5f60404ca0a9f4a2d77424e77fea/wgplayground/4bc20f61d43c2e7cef3e1e8cd6305974.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/triminos-dominoes-triangles"
+      },
+      {
+        "title": "Pillar checkers, duel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/888b7d01bd5290b78c3aacd16a33947c/wgplayground/e0218100d4b91a75dbdb606964d1c495.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/pillar-checkers-duel"
+      },
+      {
+        "title": "Austrian domino duel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/841e4356549db745c7a5ed9d717b178e/wgplayground/829c676574dd16a371310cfaa2c4453c.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/austrian-domino-duel"
+      },
+      {
+        "title": "Tavreli: Russian Chess",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/1ff5fcba593c2e4027759a2335924f86/wgplayground/e3255cfb575114b9f54b2b2f44822427.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/tavreli-russian-chess"
+      },
+      {
+        "title": "Domino sausage, duel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/70630d573f504bab717301e12e89c955/wgplayground/232abf888c9cfd40ee909b87497d763c.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/domino-sausage-duel"
+      },
+      {
+        "title": "La Casa de Tung Tung Sahur",
+        "publisher": "FBK",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d400d5eec92a2c5a197c1d152a91440a/wgplayground/d8e07a33914eca0f2be7e6ae53412f5c.jpg",
+        "url": "https://www.wgplayground.com/game/fbk/la-casa-de-tung-tung-sahur"
+      },
+      {
+        "title": "Bank Boom Tung Tung Sahur",
+        "publisher": "FBK",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/be2ec769ff9e8efead08ba82a31a005d/wgplayground/f3a99f936cf658c4a96f0b4f8737290b.jpg",
+        "url": "https://www.wgplayground.com/game/fbk/bank-boom-tung-tung-sahur"
+      },
+      {
+        "title": "Domino spider, duel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/d23afb2890239dcf647fd03cdcfaa75f/wgplayground/6b77d4afd23bae0eb7b4b41a2a8d420a.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/domino-spider-duel"
+      },
+      {
+        "title": "Stickman battle 1-4 Players",
+        "publisher": "GAMEPUSH",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/718cd369c1822604afa0a5c7ae4f8b77/wgplayground/1d7220e96982d06ff2e1a241145c4851.jpg",
+        "url": "https://www.wgplayground.com/game/gamepush/stickman-battle-1-4-players"
+      },
+      {
+        "title": "Xiangqi: Chinese chess, duel",
+        "publisher": "Kirlanik",
+        "image": "https://scout.wgimager.com/f_avif/w_360/h_270/q_50/https://static.wgplayground.com/ba48a510016c9ac6be0195d35e152c7c/wgplayground/79a15b5086aa07b4bf37e833df36173f.jpg",
+        "url": "https://www.wgplayground.com/game/kirlanik/xiangqi-chinese-chess-duel"
+      }
+    ]
+  }
+}

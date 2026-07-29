@@ -1,0 +1,133 @@
+:root {
+  --crimson: #c8152a;
+  --gold: #f5c842;
+  --amber: #e8833a;
+  --dark-bg: #0a0205;
+  --card-bg: #1a080b;
+  --border: #3a1218;
+  --text-main: #e8d4b8;
+  --text-muted: #a88972;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--dark-bg);
+  color: var(--text-main);
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+body::before {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.06) 2px, rgba(0, 0, 0, 0.06) 4px);
+  content: "";
+  pointer-events: none;
+}
+
+.content-main {
+  width: min(860px, calc(100% - 40px));
+  min-height: 62vh;
+  margin: 0 auto;
+  padding: clamp(52px, 8vw, 86px) 0;
+}
+
+.page-kicker {
+  margin-bottom: 10px;
+  color: var(--amber);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.content-main h1 {
+  margin-bottom: 34px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(20px, 4vw, 34px);
+  line-height: 1.4;
+  text-shadow: 3px 3px 0 #650b18;
+}
+
+.content-main h2 {
+  margin: 34px 0 12px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.content-main p,
+.content-main ul {
+  margin-bottom: 18px;
+}
+
+.content-main ul {
+  padding-left: 24px;
+}
+
+.content-main li {
+  margin-bottom: 8px;
+}
+
+.content-main a {
+  color: var(--crimson);
+}
+
+.content-main a:hover,
+.content-main a:focus-visible {
+  color: var(--gold);
+}
+
+.notice-box {
+  margin: 26px 0;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--crimson);
+  border-radius: 5px;
+  background: var(--card-bg);
+}
+
+.site-footer {
+  padding: 34px 20px 28px;
+  border-top: 2px solid var(--border);
+  background: #060103;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--gold);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  color: #6d5547;
+  font-size: 13px;
+}
