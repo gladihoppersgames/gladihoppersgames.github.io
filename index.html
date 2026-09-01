@@ -292,8 +292,26 @@
       font-size: 20px;
       color: var(--text-muted);
       max-width: 600px;
-      margin: 0 auto 32px;
+      margin: 0 auto 20px;
       font-style: italic;
+    }
+
+    .hero-intro {
+      font-size: 17px;
+      color: var(--text-main);
+      max-width: 760px;
+      margin: 0 auto 14px;
+      line-height: 1.75;
+    }
+
+    .hero-stats {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      color: var(--gold);
+      max-width: 760px;
+      margin: 0 auto 30px;
+      line-height: 2;
+      letter-spacing: 0.03em;
     }
 
     .hero-cta {
@@ -482,7 +500,23 @@
       line-height: 1.8;
     }
 
+    .about-inner h3 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 11px;
+      color: var(--gold);
+      margin: 34px 0 18px;
+      line-height: 1.7;
+    }
+
     .about-inner strong { color: var(--gold); font-weight: 700; }
+
+    .about-inner a {
+      color: var(--crimson);
+      text-decoration: underline;
+    }
+
+    .about-inner a:hover,
+    .about-inner a:focus-visible { color: var(--gold); }
 
     .feature-list {
       list-style: none;
@@ -693,7 +727,7 @@
   <!-- HEADER -->
   <header class="site-header">
     <a href="./" class="logo-area" aria-label="Gladihoppers Home">
-      <img src="favicon.png" alt="Gladihoppers icon" width="48" height="48" />
+      <img src="favicon.png" alt="Gladihoppers Games logo" width="48" height="48" />
       <span class="logo-text">
         GLADIHOPPERS
         <span>FREE ARENA BATTLE GAME</span>
@@ -733,6 +767,8 @@
     <div class="hero-badge">⚔ FREE ONLINE GAME ⚔</div>
     <h1>GLADI<span class="red-word">HOPPERS</span></h1>
     <p class="hero-sub">The ultimate pixel gladiator battle — fight, survive, conquer the arena.</p>
+    <p class="hero-intro">Welcome to Gladihoppers Games, where you can play free online games straight from your browser. Step into the gladiator arena below, then explore our wider collection of action, adventure, arcade, racing, sports, horror, puzzle, and 2-player titles. Every game loads instantly, so there is nothing to download and nothing to install.</p>
+    <p class="hero-stats">162 Games · 8 Categories · No Install Needed · Any Device · Play With Friends · All For Free</p>
     <a href="#play" class="hero-cta" aria-label="Play Gladihoppers now">▶ PLAY NOW — FREE</a>
   </section>
 
@@ -801,7 +837,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/aeec5f7c889e7287c76c84cfb99e1a9a/wgplayground/f611dae0cff88513f088035b439e4163.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Vega Mix Adventure</span>
         </a>
-        <a class="home-game-card" href="games/arcade/world-wars-tanks/" aria-label="Play World Wars - Tanks">
+        <a class="home-game-card" href="games/action/world-wars-tanks/" aria-label="Play World Wars - Tanks">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/d99f34ff2a2ee1dfe5748ac73b26172c/wgplayground/7c425a733e76e91f2d5b064affae55ed.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>World Wars - Tanks</span>
         </a>
@@ -828,9 +864,9 @@
       </div>
     </section>
 
-    <section class="home-game-group" aria-labelledby="home-new-games">
+    <section class="home-game-group" aria-labelledby="home-trending-games">
       <div class="home-group-header">
-        <h2 id="home-new-games">New Games</h2>
+        <h2 id="home-trending-games">Trending Games</h2>
         <a href="games/action/">Explore Games →</a>
       </div>
       <div class="home-game-grid">
@@ -846,7 +882,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/d9721f66a3a64c32bd531584cdd16e09/wgplayground/b3068422f7e2c8d98670528c3db9c0f6.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Fishing the Russian Way</span>
         </a>
-        <a class="home-game-card" href="games/horror/anime-horror-escape/" aria-label="Play Anime Horror Escape">
+        <a class="home-game-card" href="games/adventure/anime-horror-escape/" aria-label="Play Anime Horror Escape">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/0c0b89f8a48b4bf74f201aad3b88facd/wgplayground/a63c80fb6be62edd8447d0ce7ab5df07.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Anime Horror Escape</span>
         </a>
@@ -854,7 +890,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/b8b5aadeb982aba3daa33be5b83638a8/wgplayground/6dd8d93a4981e9946eb24c45ba5813d3.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Bolts - Unscrew It</span>
         </a>
-        <a class="home-game-card" href="games/2players/correct-football/" aria-label="Play Correct Football">
+        <a class="home-game-card" href="games/sports/correct-football/" aria-label="Play Correct Football">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/bbe1c86f78a7c174236bca6422f3cc26/wgplayground/338030f5c599992e86813793bc23b84f.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Correct Football</span>
         </a>
@@ -862,24 +898,24 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/426c394eacdca2cf6fe6113780e20882/wgplayground/ad7c78fad22cb2c1a918570e9de7e44d.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>CS: Command Snipers</span>
         </a>
-        <a class="home-game-card" href="games/adventure/dead-walker-zombie-shooter/" aria-label="Play Dead Walker: Zombie Shooter">
+        <a class="home-game-card" href="games/action/dead-walker-zombie-shooter/" aria-label="Play Dead Walker: Zombie Shooter">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/a13f875698d11c23ab890d3dfc2663ba/wgplayground/6b4cdeb847a8121f53171944ac276c86.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Dead Walker: Zombie Shooter</span>
         </a>
       </div>
     </section>
 
-    <section class="home-game-group" aria-labelledby="home-trending-games">
+    <section class="home-game-group" aria-labelledby="home-new-games">
       <div class="home-group-header">
-        <h2 id="home-trending-games">Trending Games</h2>
+        <h2 id="home-new-games">New Games</h2>
         <a href="games/action/">Explore Games →</a>
       </div>
       <div class="home-game-grid">
-        <a class="home-game-card" href="games/sports/tap-tap-racing/" aria-label="Play Tap Tap Racing">
+        <a class="home-game-card" href="games/arcade/tap-tap-racing/" aria-label="Play Tap Tap Racing">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/d80eb5762c2736600e7174322a28b183/wgplayground/f001375bd3b505693971a52d0a919422.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Tap Tap Racing</span>
         </a>
-        <a class="home-game-card" href="games/horror/freddys-chronicles/" aria-label="Play Freddy&#39;s Chronicles">
+        <a class="home-game-card" href="games/adventure/freddys-chronicles/" aria-label="Play Freddy&#39;s Chronicles">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/e8a4f9b068631cb1888221a24ea8e0e8/wgplayground/a104a0b8a8250b48ae67a1b32ebab8e4.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Freddy&#39;s Chronicles</span>
         </a>
@@ -887,7 +923,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/46b9d2ee972d852e28dc7a2926f93c29/wgplayground/edc9bf97840b669a0c8442240066a3ef.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Mate in Chess</span>
         </a>
-        <a class="home-game-card" href="games/2players/2-player-crazy-racer/" aria-label="Play 2 Player Crazy Racer">
+        <a class="home-game-card" href="games/cars/2-player-crazy-racer/" aria-label="Play 2 Player Crazy Racer">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/e359043d79f00af5c9ecdc90458e3516/wgplayground/057d62db8546ead17ee66cdefcde8c1b.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>2 Player Crazy Racer</span>
         </a>
@@ -895,7 +931,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/3f85058b0fceb41f958925d988c372a0/wgplayground/723ce41407ae283c3fa5d4fe654c3e1e.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>FPS Toy Realism</span>
         </a>
-        <a class="home-game-card" href="games/adventure/robby-bomberman/" aria-label="Play Robby: Bomberman">
+        <a class="home-game-card" href="games/action/robby-bomberman/" aria-label="Play Robby: Bomberman">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/4c3e3ab9a6b629cf7c8d7db7fc4bafcd/wgplayground/cc69772ffa2ee58b926831ffb19c66b1.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Robby: Bomberman</span>
         </a>
@@ -903,7 +939,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/4543537fe596a2932565532cd1ccaa63.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Blocks Merge Puzzle 2048</span>
         </a>
-        <a class="home-game-card" href="games/cars/real-car-simulator-traffic-games/" aria-label="Play Real Car Simulator Traffic Games">
+        <a class="home-game-card" href="games/action/real-car-simulator-traffic-games/" aria-label="Play Real Car Simulator Traffic Games">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/7e067c8cf16d816dfc2bd93fadf2ccab/wgplayground/ce3f348c2bd076142d4772fd7c02d9ed.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Real Car Simulator Traffic Games</span>
         </a>
@@ -920,7 +956,7 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/ff18b9a7c50332512fe2f7e1c780c413/wgplayground/4e0c13c72378339803d3a072862afa2b.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Fruit Cafe: Match 3</span>
         </a>
-        <a class="home-game-card" href="games/2players/the-best-russian-billiards/" aria-label="Play The Best Russian Billiards">
+        <a class="home-game-card" href="games/sports/the-best-russian-billiards/" aria-label="Play The Best Russian Billiards">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/1c4e1260dd6963b345a4f9a7e576a513/wgplayground/f87734d036c1723409e07c55c8cdda50.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>The Best Russian Billiards</span>
         </a>
@@ -936,15 +972,15 @@
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/4d441808701ca712215375cf688c3815/wgplayground/3903648b84a0d2bfa75ecfbc6ede24a9.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Savage Defenders</span>
         </a>
-        <a class="home-game-card" href="games/cars/king-kong-kart-racing/" aria-label="Play King Kong Kart Racing">
+        <a class="home-game-card" href="games/action/king-kong-kart-racing/" aria-label="Play King Kong Kart Racing">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/8a7d33f4e87371d4fcf6aeecbf8e13bd/wgplayground/9c3301f10ef98673eabb1f60da808db1.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>King Kong Kart Racing</span>
         </a>
-        <a class="home-game-card" href="games/sports/golf-mini/" aria-label="Play Golf Mini">
+        <a class="home-game-card" href="games/arcade/golf-mini/" aria-label="Play Golf Mini">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/d7a909a564adcb2d9902380a53176241/wgplayground/3884458e0ec48aa12277e5d9d6dc8960.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Golf Mini</span>
         </a>
-        <a class="home-game-card" href="games/horror/maze-of-death/" aria-label="Play Maze of Death">
+        <a class="home-game-card" href="games/adventure/maze-of-death/" aria-label="Play Maze of Death">
           <img src="https://scout.wgimager.com/f_avif/w_360/h_360/q_50/https://static.wgplayground.com/c1a39dd6996b63807a6058f7022aaf35/wgplayground/32f9f27951e76f338209a47e4e8ced80.jpg" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>Maze of Death</span>
         </a>
@@ -987,9 +1023,26 @@
   <!-- HOME_GAME_SECTIONS_END -->
 
   <!-- ABOUT -->
-  <section class="about-section" id="about" aria-label="About Gladihoppers">
+  <section class="about-section" id="about" aria-label="About Gladihoppers Games">
     <div class="about-inner">
-      <h2>ABOUT GLADIHOPPERS</h2>
+      <h2>ABOUT GLADIHOPPERS GAMES</h2>
+      <p>
+        <strong>Gladihoppers Games</strong> began as a single arena battle game and grew into a compact, carefully curated portal for free browser gaming. Rather than flooding the page with thousands of low-quality titles, we keep the library focused: 162 hand-checked games across eight categories, each one tested to load quickly and play well without an account, a launcher, or a plugin.
+      </p>
+      <p>
+        Our collection spans <strong>action, adventure, arcade, cars, sports, horror, puzzles, and 2-player games</strong>. That mix covers short coffee-break sessions and longer runs alike — a quick reflex challenge, a racing circuit, a chess match against a friend on the same keyboard, or a puzzle that takes a few evenings to finish. Every category page groups its games in one clean grid, and every game has its own page explaining the controls, the objective, and how progression works before you start.
+      </p>
+      <p>
+        All games run directly in a modern browser and are built to work on desktop computers, tablets, and phones. There is <strong>no software to download and no installation step</strong>: open a game page, wait for the player to load, and start. Fullscreen is one click away on every title, and the pages stay light so they load on slower connections too.
+      </p>
+      <p>
+        We aim to keep the site a <strong>safe and straightforward place to play</strong>. Navigation is honest — no misleading download buttons, no pop-ups disguised as gameplay, and no links that take you somewhere you did not choose. Games come from established HTML5 studios and are presented with their original controls and behaviour intact.
+      </p>
+      <p>
+        The platform improves based on how people actually use it. Popular titles move into the featured and trending rows, newly added games are highlighted, and categories are rebalanced as the library grows. If a game is broken, mislabelled, or you would like to see something added, our <a href="contact/">contact page</a> is the fastest way to reach us.
+      </p>
+
+      <h3>About the Gladihoppers Arena Game</h3>
       <p>
         <strong>Gladihoppers</strong> is a wildly addictive pixel-art gladiator battle game that drops you into brutal arena combat. Control your warrior through wave after wave of increasingly dangerous opponents, collect powerful gear, and rise through the ranks to become the greatest gladiator the arena has ever seen.
       </p>
@@ -1010,6 +1063,19 @@
         <li>No download required</li>
         <li>Completely free to play</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- RECENTLY PLAYED (filled from this browser's own history, hidden when empty) -->
+  <section class="home-game-discovery home-recent" data-recently-played aria-labelledby="home-recently-played" hidden>
+    <div class="home-games-inner">
+      <section class="home-game-group">
+        <div class="home-group-header">
+          <h2 id="home-recently-played">Recently Played Games</h2>
+          <a href="games/action/">Explore Games →</a>
+        </div>
+        <div class="home-game-grid"></div>
+      </section>
     </div>
   </section>
 

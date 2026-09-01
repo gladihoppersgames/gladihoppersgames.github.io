@@ -6,6 +6,10 @@ const homepagePath = path.join(root, "index.html");
 const catalog = JSON.parse(
   fs.readFileSync(path.join(root, "games", "wgplayground-catalog.json"), "utf8"),
 ).categories;
+const metadataByUrl = new Map(
+  JSON.parse(fs.readFileSync(path.join(root, "games", "game-metadata.json"), "utf8"))
+    .games.map((game) => [game.url, game]),
+);
 
 const categories = [
   ["action", "Action Games"],
@@ -18,10 +22,11 @@ const categories = [
   ["2players", "2 Player Games"],
 ];
 
+// Order follows the publishing standard: Featured, Trending, New, Popular.
 const groups = [
   ["Featured Games", 0],
-  ["New Games", 2],
-  ["Trending Games", 4],
+  ["Trending Games", 2],
+  ["New Games", 4],
   ["Popular Games", 6],
 ];
 
@@ -57,9 +62,17 @@ function takeGame(category) {
   throw new Error(`Not enough unique games in ${category}`);
 }
 
-function gameCard(game, category) {
+// Cards always point at a game's single canonical URL, which is built from the
+// first category listed for it in the metadata.
+function primaryCategoryFor(game) {
+  const record = metadataByUrl.get(game.url);
+  if (!record) throw new Error(`Missing metadata for ${game.url}`);
+  return record.categories[0];
+}
+
+function gameCard(game) {
   const title = esc(game.title);
-  return `        <a class="home-game-card" href="games/${category}/${slugFor(game)}/" aria-label="Play ${title}">
+  return `        <a class="home-game-card" href="games/${primaryCategoryFor(game)}/${slugFor(game)}/" aria-label="Play ${title}">
           <img src="${esc(squareImage(game.image))}" alt="" width="360" height="360" loading="lazy" decoding="async" />
           <span>${title}</span>
         </a>`;
@@ -70,7 +83,7 @@ const groupMarkup = groups.map(([heading, offset]) => {
     .slice(offset)
     .concat(categories.slice(0, offset));
   const cards = orderedCategories
-    .map(([category]) => gameCard(takeGame(category), category))
+    .map(([category]) => gameCard(takeGame(category)))
     .join("\n");
   return `    <section class="home-game-group" aria-labelledby="home-${heading.toLowerCase().replaceAll(" ", "-")}">
       <div class="home-group-header">

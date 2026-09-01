@@ -4,6 +4,7 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "games", "game-metadata.json"), "utf8")).games;
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "games", "wgplayground-catalog.json"), "utf8")).categories;
+const metadataByUrl = new Map(metadata.map((game) => [game.url, game]));
 
 const categoryNames = {
   action: "Action",
@@ -102,6 +103,19 @@ function routeFor(game, category) {
   return `/games/${category}/${slugFor(game)}/`;
 }
 
+// Every game is published at exactly one canonical URL, built from its first
+// listed category. Any other category it appears in keeps a redirect stub so
+// existing links survive without creating a duplicate game page.
+function primaryCategoryFor(game) {
+  const record = metadataByUrl.get(game.url);
+  if (!record) throw new Error(`Missing metadata for ${game.url}`);
+  return record.categories[0];
+}
+
+function canonicalRouteFor(game) {
+  return routeFor(game, primaryCategoryFor(game));
+}
+
 function legacyRouteFor(game) {
   const parsed = new URL(game.url);
   const parts = parsed.pathname.split("/").filter(Boolean);
@@ -135,15 +149,13 @@ function relatedFor(game, category) {
     .slice(0, 12)
     .map((candidate) => ({
       ...candidate,
-      internal: routeFor(candidate, category)
+      internal: canonicalRouteFor(candidate)
     }));
 }
 
-const metadataByUrl = new Map(metadata.map((game) => [game.url, game]));
-
 function headerMarkup() {
   return `<header class="site-header">
-    <a href="../../../" class="logo-area" aria-label="Gladihoppers Games home"><img src="../../../favicon.png" alt="Gladihoppers icon" width="44" height="44" /><span class="logo-text">GLADIHOPPERS<span>FREE BROWSER GAMES</span></span></a>
+    <a href="../../../" class="logo-area" aria-label="Gladihoppers Games home"><img src="../../../favicon.png" alt="Gladihoppers Games logo" width="44" height="44" /><span class="logo-text">GLADIHOPPERS<span>FREE BROWSER GAMES</span></span></a>
     <div class="header-tools">
       <nav class="main-nav" aria-label="Main navigation"><a href="../../../">Home</a><a href="../../../games/action/">Action</a><a href="../../../games/arcade/">Arcade</a><a href="../../../games/cars/">Cars</a><a href="../../../games/sports/">Sports</a><a href="../../../games/adventure/">Adventure</a><a href="../../../games/horror/">Horror</a><details class="more-menu"><summary>More</summary><div class="more-menu-items"><a href="../../../games/2players/">2 Players</a><a href="../../../games/puzzles/">Puzzles</a></div></details></nav>
       <form class="site-search" role="search" action="../../../" method="get"><label class="search-status" for="site-search-game">Search game categories</label><input id="site-search-game" name="search" type="search" placeholder="Search games..." list="game-categories-game" autocomplete="off" /><datalist id="game-categories-game"><option value="Action"></option><option value="Arcade"></option><option value="Cars"></option><option value="Sports"></option><option value="Adventure"></option><option value="Horror"></option><option value="2 Players"></option><option value="Puzzles"></option></datalist><button type="submit" aria-label="Search">⌕</button></form><p class="search-status" aria-live="polite"></p>
@@ -155,11 +167,30 @@ function footerMarkup() {
   return `<footer class="site-footer"><div class="footer-logo">⚔ GLADIHOPPERS ⚔</div><nav class="footer-links" aria-label="Footer navigation"><a href="../../../about/">About Us</a><a href="../../../contact/">Contact Us</a><a href="../../../privacy.html">Privacy Policy</a><a href="../../../terms/">Terms of Service</a><a href="../../../cookies/">Cookie Policy</a><a href="../../../DCMA.html">DMCA</a><a href="../../../sitemap.xml">Sitemap</a></nav><p class="footer-copy">&copy; <span class="current-year">2026</span> GladiHoppers Games. All rights reserved.</p></footer>`;
 }
 
+function duplicateStub(game, category) {
+  const destination = canonicalRouteFor(game);
+  const depth = "../../..";
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${esc(game.title)}</title><meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://gladihoppersgames.github.io${destination}" />
+<meta http-equiv="refresh" content="0; url=${depth}${destination}" /></head>
+<body><p>${esc(game.title)} is listed in more than one category and is published at <a href="${depth}${destination}">${esc(game.title)}</a>.</p></body></html>`;
+}
+
 let generatedPageCount = 0;
+let stubPageCount = 0;
 for (const [category, categoryGames] of Object.entries(catalog)) {
 for (const catalogGame of categoryGames) {
   const game = metadataByUrl.get(catalogGame.url);
   if (!game) throw new Error(`Missing metadata for ${catalogGame.url}`);
+  if (primaryCategoryFor(game) !== category) {
+    const stubPath = diskPathFor(game, category);
+    fs.mkdirSync(path.dirname(stubPath), { recursive: true });
+    fs.writeFileSync(stubPath, duplicateStub(game, category), "utf8");
+    stubPageCount += 1;
+    continue;
+  }
   const categoryName = categoryNames[category];
   const profile = profiles[category];
   const about = aboutFor(game, category);
@@ -187,6 +218,7 @@ for (const catalogGame of categoryGames) {
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../../game-page.css" /><link rel="stylesheet" href="../../../header.css" />
   <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"VideoGame",name:game.title,url:canonical,image:game.image,genre:game.categories.map((item)=>categoryNames[item]),gamePlatform:"Web Browser",playMode:game.categories.includes("2players")?"MultiPlayer":"SinglePlayer",publisher:{"@type":"Organization",name:game.publisher}}).replaceAll("<","\\u003c")}</script>
+  <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://gladihoppersgames.github.io/"},{"@type":"ListItem",position:2,name:`${categoryName} Games`,item:`https://gladihoppersgames.github.io/games/${category}/`},{"@type":"ListItem",position:3,name:game.title,item:canonical}]}).replaceAll("<","\\u003c")}</script>
 </head>
 <body>
   ${headerMarkup()}
@@ -203,7 +235,9 @@ for (const catalogGame of categoryGames) {
     <section class="related-section"><h2>Related ${categoryName} Games</h2><div class="related-grid">${relatedMarkup}</div></section>
   </main>
   ${footerMarkup()}
-  <script>document.querySelector(".current-year").textContent = new Date().getFullYear();</script><script src="../../../site-search.js"></script>
+  <script>document.querySelector(".current-year").textContent = new Date().getFullYear();</script>
+  <script>window.gladiRecentGame = ${JSON.stringify({ title: game.title, path: routeFor(game, category).slice(1), image: game.image.replace("/w_360/h_270/", "/w_360/h_360/") }).replaceAll("<", "\\u003c")};</script>
+  <script src="../../../site-search.js"></script>
 </body>
 </html>`;
 
@@ -222,7 +256,9 @@ for (const [category, items] of Object.entries(catalog)) {
   html = html.replace(/(<a class="game-card" href=")[^"]+("[^>]*>)/g, (match, prefix, suffix) => {
     const item = items[cardIndex++];
     if (!item) return match;
-    return `${prefix}./${slugFor(item)}/${suffix.replace(`aria-label="Play ${esc(item.title)} on WGPlayground"`, `aria-label="Play ${esc(item.title)}"`)}`;
+    const primary = primaryCategoryFor(item);
+    const href = primary === category ? `./${slugFor(item)}/` : `../${primary}/${slugFor(item)}/`;
+    return `${prefix}${href}${suffix.replace(`aria-label="Play ${esc(item.title)} on WGPlayground"`, `aria-label="Play ${esc(item.title)}"`)}`;
   });
   if (cardIndex !== items.length) throw new Error(`Expected ${items.length} cards in ${categoryFile}, updated ${cardIndex}`);
   fs.writeFileSync(categoryFile, html, "utf8");
@@ -243,13 +279,13 @@ for (const game of metadata) {
 const sitemapPath = path.join(root, "sitemap.xml");
 let sitemap = fs.readFileSync(sitemapPath, "utf8");
 sitemap = sitemap.replace(/\s*<!-- GAME_PAGES_START -->[\s\S]*?<!-- GAME_PAGES_END -->\s*/g, "\n");
-const gameUrls = Object.entries(catalog).flatMap(([category, items]) => items.map((game) => `  <url>
-    <loc>https://gladihoppersgames.github.io${routeFor(game, category)}</loc>
+const gameUrls = metadata.map((game) => `  <url>
+    <loc>https://gladihoppersgames.github.io${canonicalRouteFor(game)}</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>`)).join("\n\n");
+  </url>`).join("\n\n");
 sitemap = sitemap.replace("</urlset>", `  <!-- GAME_PAGES_START -->\n${gameUrls}\n  <!-- GAME_PAGES_END -->\n\n</urlset>`);
 fs.writeFileSync(sitemapPath, sitemap, "utf8");
 
-console.log(`Generated ${generatedPageCount} category game pages, updated ${Object.keys(catalog).length} grids, and preserved ${metadata.length} legacy redirects.`);
+console.log(`Generated ${generatedPageCount} canonical game pages, ${stubPageCount} cross-category canonical stubs, updated ${Object.keys(catalog).length} grids, and preserved ${metadata.length} legacy redirects.`);

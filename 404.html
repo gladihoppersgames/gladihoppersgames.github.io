@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – Gladihoppers Games</title>
+  <meta name="description" content="That page could not be found. Browse free online games by category or search the Gladihoppers Games library." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --crimson: #c8152a; --gold: #f5c842; --dark-bg: #0a0205;
+      --mid-bg: #130608; --card-bg: #1a080b; --border: #3a1218;
+      --text-main: #e8d4b8; --text-muted: #8a6a55;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--dark-bg); color: var(--text-main); font-family: 'Crimson Pro', Georgia, serif; font-size: 18px; line-height: 1.7; }
+    body::before { content: ''; position: fixed; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.06) 2px, rgba(0,0,0,0.06) 4px); pointer-events: none; z-index: 9999; }
+    main { max-width: 900px; margin: 0 auto; padding: 72px 24px 88px; text-align: center; }
+    .code { font-family: 'Press Start 2P', monospace; font-size: clamp(38px, 9vw, 76px); color: var(--crimson); line-height: 1.2; text-shadow: 0 0 24px rgba(200, 21, 42, 0.45); }
+    h1 { font-family: 'Press Start 2P', monospace; font-size: clamp(13px, 2.6vw, 18px); color: var(--gold); margin: 22px 0 18px; line-height: 1.7; }
+    .lead { color: var(--text-main); max-width: 620px; margin: 0 auto 36px; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 56px; }
+    .actions a { font-family: 'Press Start 2P', monospace; font-size: 10px; text-decoration: none; padding: 15px 22px; border-radius: 5px; border: 2px solid var(--crimson); color: var(--gold); background: #16060a; transition: background 160ms ease, color 160ms ease; }
+    .actions a:hover, .actions a:focus-visible { background: var(--crimson); color: #fff; }
+    h2 { font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--gold); margin-bottom: 22px; line-height: 1.7; }
+    .cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; text-align: left; }
+    .cats a { display: block; padding: 16px 18px; border: 1px solid var(--border); border-radius: 6px; background: var(--card-bg); color: var(--gold); font-family: 'Press Start 2P', monospace; font-size: 10px; text-decoration: none; line-height: 1.6; transition: border-color 160ms ease, transform 160ms ease; }
+    .cats a span { display: block; margin-top: 8px; color: var(--text-muted); font-family: 'Crimson Pro', Georgia, serif; font-size: 14px; }
+    .cats a:hover, .cats a:focus-visible { border-color: var(--crimson); transform: translateY(-2px); }
+    footer { background: #060103; border-top: 2px solid var(--border); padding: 24px; text-align: center; }
+    footer a { font-family: 'Press Start 2P', monospace; font-size: 8px; color: var(--text-muted); text-decoration: none; margin: 0 12px; }
+    footer a:hover { color: var(--gold); }
+    .footer-copy { font-size: 13px; color: #4a3028; margin-top: 12px; }
+  </style>
+  <link rel="stylesheet" href="/header.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo-area" aria-label="Gladihoppers Games home">
+      <img src="/favicon.png" alt="Gladihoppers Games logo" width="44" height="44" />
+      <span class="logo-text">GLADIHOPPERS<span>FREE BROWSER GAMES</span></span>
+    </a>
+    <div class="header-tools">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/games/action/">Action</a>
+        <a href="/games/arcade/">Arcade</a>
+        <a href="/games/cars/">Cars</a>
+        <a href="/games/sports/">Sports</a>
+        <a href="/games/adventure/">Adventure</a>
+        <a href="/games/horror/">Horror</a>
+        <details class="more-menu">
+          <summary>More</summary>
+          <div class="more-menu-items">
+            <a href="/games/2players/">2 Players</a>
+            <a href="/games/puzzles/">Puzzles</a>
+          </div>
+        </details>
+      </nav>
+      <form class="site-search" role="search" action="/" method="get">
+        <label class="search-status" for="site-search-404">Search games</label>
+        <input id="site-search-404" name="search" type="search" placeholder="Search games..." autocomplete="off" />
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+      <p class="search-status" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main>
+    <p class="code">404</p>
+    <h1>THIS ARENA IS EMPTY</h1>
+    <p class="lead">The page you were looking for does not exist, or the game has moved to a different category. Use the search bar above to find a game by name, or pick a category below.</p>
+
+    <div class="actions">
+      <a href="/">Back to Home</a>
+      <a href="/games/action/">▶ Browse All Games</a>
+    </div>
+
+    <h2>GAME CATEGORIES</h2>
+    <div class="cats">
+      <a href="/games/action/">Action Games <span>24 games</span></a>
+      <a href="/games/adventure/">Adventure Games <span>24 games</span></a>
+      <a href="/games/arcade/">Arcade Games <span>24 games</span></a>
+      <a href="/games/cars/">Cars Games <span>24 games</span></a>
+      <a href="/games/sports/">Sports Games <span>24 games</span></a>
+      <a href="/games/horror/">Horror Games <span>24 games</span></a>
+      <a href="/games/puzzles/">Puzzle Games <span>24 games</span></a>
+      <a href="/games/2players/">2 Player Games <span>24 games</span></a>
+    </div>
+  </main>
+
+  <footer>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact Us</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/cookies/">Cookie Policy</a>
+      <a href="/DCMA.html">DMCA</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+    <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> GladiHoppers Games</p>
+  </footer>
+  <script src="/site-search.js"></script>
+</body>
+</html>

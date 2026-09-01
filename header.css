@@ -133,6 +133,7 @@
 }
 
 .site-search {
+  position: relative;
   display: flex;
   flex: 0 0 clamp(160px, 17vw, 225px);
   align-items: stretch;
@@ -242,5 +243,84 @@
 @media (max-width: 520px) {
   .site-header .logo-text span {
     display: none;
+  }
+}
+
+/* Search suggestions */
+.search-results {
+  position: absolute;
+  z-index: 60;
+  top: calc(100% + 6px);
+  right: 0;
+  left: auto;
+  min-width: min(360px, 90vw);
+  max-height: 340px;
+  overflow-y: auto;
+  border: 1px solid #3a1218;
+  border-radius: 6px;
+  background: #0d0305;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+.search-results[hidden] {
+  display: none;
+}
+
+.search-result {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #24080d;
+  color: #e8d4b8;
+  text-decoration: none;
+}
+
+.search-result:last-child {
+  border-bottom: 0;
+}
+
+.search-result img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #24080d;
+}
+
+.search-result-title {
+  overflow: hidden;
+  font: 15px "Crimson Pro", Georgia, serif;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result-category {
+  color: #f5c842;
+  font: 9px "Press Start 2P", monospace;
+  letter-spacing: 0.04em;
+}
+
+.search-result:hover,
+.search-result:focus-visible,
+.search-result.is-active {
+  background: #240a0f;
+  outline: 0;
+}
+
+.search-empty {
+  margin: 0;
+  padding: 12px;
+  color: #b08d72;
+  font: 14px "Crimson Pro", Georgia, serif;
+}
+
+@media (max-width: 820px) {
+  .search-results {
+    right: 0;
+    left: 0;
+    min-width: 0;
   }
 }

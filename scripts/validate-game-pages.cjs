@@ -46,15 +46,48 @@ function resolveInternalLink(sourceFile, href) {
   return clean.endsWith("/") ? path.join(candidate, "index.html") : candidate;
 }
 
-const pages = categories.flatMap((category) => {
+const metadata = JSON.parse(
+  fs.readFileSync(path.join(root, "games", "game-metadata.json"), "utf8"),
+).games;
+const gameCount = metadata.length;
+
+const allGameFiles = categories.flatMap((category) => {
   const categoryDirectory = path.join(root, "games", category);
   return fs.readdirSync(categoryDirectory, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => path.join(categoryDirectory, entry.name, "index.html"))
     .filter((file) => fs.existsSync(file));
 });
-if (pages.length !== 192) {
-  failures.push(`Expected 192 category game pages, found ${pages.length}.`);
+
+// A game is published once. Extra category folders hold noindex canonical stubs.
+const stubs = allGameFiles.filter((file) =>
+  fs.readFileSync(file, "utf8").includes('http-equiv="refresh"'));
+const pages = allGameFiles.filter((file) => !stubs.includes(file));
+
+if (pages.length !== gameCount) {
+  failures.push(`Expected ${gameCount} canonical game pages (one per game), found ${pages.length}.`);
+}
+
+// URL rules: one game must never be published at two indexable URLs.
+const slugOwners = new Map();
+for (const file of pages) {
+  const slug = path.basename(path.dirname(file));
+  const category = path.basename(path.dirname(path.dirname(file)));
+  if (slugOwners.has(slug)) {
+    failures.push(`Duplicate game URL: ${slug} is published under both ${slugOwners.get(slug)} and ${category}.`);
+  }
+  slugOwners.set(slug, category);
+  if (slug !== slug.toLowerCase()) failures.push(`Game URL is not lowercase: ${category}/${slug}`);
+}
+
+for (const file of stubs) {
+  const html = fs.readFileSync(file, "utf8");
+  if (!html.includes('name="robots" content="noindex, follow"')) {
+    fail(file, "cross-category duplicate is not marked noindex");
+  }
+  if (!/<link rel="canonical" href="https:\/\/gladihoppersgames\.github\.io\/games\/[a-z0-9]+\/[a-z0-9-]+\/"/.test(html)) {
+    fail(file, "cross-category duplicate has no canonical to the published game page");
+  }
 }
 
 for (const file of pages) {
@@ -141,8 +174,48 @@ for (const category of categories) {
 
 const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
 const sitemapUrls = sitemap.match(/<url>/g) || [];
-if (sitemapUrls.length !== 207) {
-  failures.push(`sitemap.xml: expected 207 URLs, found ${sitemapUrls.length}`);
+const expectedSitemapUrls = gameCount + 15;
+if (sitemapUrls.length !== expectedSitemapUrls) {
+  failures.push(`sitemap.xml: expected ${expectedSitemapUrls} URLs, found ${sitemapUrls.length}`);
+}
+const sitemapLocs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+if (new Set(sitemapLocs).size !== sitemapLocs.length) {
+  failures.push("sitemap.xml: contains duplicate <loc> entries");
+}
+for (const loc of sitemapLocs.filter((url) => /\/games\/[a-z0-9]+\/[a-z0-9-]+\//.test(url))) {
+  const relative = loc.replace("https://gladihoppersgames.github.io/", "");
+  if (!fs.existsSync(path.join(root, relative, "index.html"))) {
+    failures.push(`sitemap.xml: ${loc} does not exist on disk`);
+  }
+  if (stubs.some((file) => file.endsWith(path.join(relative.replaceAll("/", path.sep), "index.html")))) {
+    failures.push(`sitemap.xml: ${loc} is a duplicate stub and must not be listed`);
+  }
+}
+
+// Search bar must be backed by a real, complete game index.
+const searchIndexPath = path.join(root, "games", "search-index.json");
+if (!fs.existsSync(searchIndexPath)) {
+  failures.push("games/search-index.json is missing - the search bar cannot find games.");
+} else {
+  const searchGames = JSON.parse(fs.readFileSync(searchIndexPath, "utf8")).games || [];
+  if (searchGames.length !== gameCount) {
+    failures.push(`games/search-index.json: expected ${gameCount} games, found ${searchGames.length}`);
+  }
+  for (const entry of searchGames) {
+    if (!entry.t || !entry.u || !entry.c) {
+      failures.push(`games/search-index.json: incomplete entry ${JSON.stringify(entry)}`);
+      continue;
+    }
+    if (!fs.existsSync(path.join(root, entry.u, "index.html"))) {
+      failures.push(`games/search-index.json: broken link ${entry.u}`);
+    }
+  }
+  const indexedTitles = new Set(searchGames.map((entry) => entry.t));
+  for (const game of metadata) {
+    if (!indexedTitles.has(game.title)) {
+      failures.push(`games/search-index.json: ${game.title} is not searchable`);
+    }
+  }
 }
 
 const legacyPages = allFiles(path.join(root, "play"), "index.html");
@@ -179,6 +252,11 @@ if (!homeSections) {
   }
   const groups = [...homeSections.matchAll(/<section class="home-game-group"[\s\S]*?<\/section>/g)];
   if (groups.length !== 4) fail(homepagePath, `expected four homepage game groups, found ${groups.length}`);
+  const headingOrder = [...homeSections.matchAll(/<h2 id="home-[a-z-]+">([^<]+)<\/h2>/g)].map((match) => match[1]);
+  const expectedOrder = ["Featured Games", "Trending Games", "New Games", "Popular Games"];
+  if (headingOrder.slice(0, 4).join("|") !== expectedOrder.join("|")) {
+    fail(homepagePath, `homepage group order is ${headingOrder.slice(0, 4).join(", ")} instead of ${expectedOrder.join(", ")}`);
+  }
   for (const group of groups) {
     const cards = group[0].match(/class="home-game-card"/g) || [];
     if (cards.length !== 8) fail(homepagePath, `homepage group contains ${cards.length} cards instead of eight`);
@@ -194,13 +272,68 @@ if (!homeSections) {
   }
 }
 
+// Homepage structure required by the publishing standard.
+const introBlock = homepage.match(/<p class="hero-intro">([\s\S]*?)<\/p>/)?.[1];
+if (!introBlock) {
+  fail(homepagePath, "missing the homepage intro paragraph");
+} else if (wordCount(introBlock) < 30) {
+  fail(homepagePath, `homepage intro is only ${wordCount(introBlock)} words`);
+}
+if (!homepage.includes('class="hero-stats"')) {
+  fail(homepagePath, "missing the homepage at-a-glance summary line");
+}
+
+const aboutBlock = homepage.match(/<h2>ABOUT GLADIHOPPERS GAMES<\/h2>([\s\S]*?)<h3>/);
+if (!aboutBlock) {
+  fail(homepagePath, "missing the About the Platform section");
+} else {
+  const aboutWords = wordCount(aboutBlock[1]);
+  if (aboutWords < 300) fail(homepagePath, `About the Platform copy is ${aboutWords} words, needs at least 300`);
+  const themes = [/no (installation|software to download)/i, /browser/i, /desktop/i, /safe/i, /categor/i, /contact/i];
+  for (const theme of themes) {
+    if (!theme.test(aboutBlock[1])) fail(homepagePath, `About the Platform copy does not cover ${theme}`);
+  }
+}
+if (!homepage.includes("data-recently-played")) {
+  fail(homepagePath, "missing the Recently Played section");
+}
+
+// Header and footer rules apply to every page on the site.
+function everyHtmlFile(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (entry.name === ".git" || entry.name === "node_modules") return [];
+    const target = path.join(directory, entry.name);
+    if (entry.isDirectory()) return everyHtmlFile(target);
+    return entry.name.endsWith(".html") ? [target] : [];
+  });
+}
+
+const footerLinks = ["About Us", "Contact Us", "Privacy Policy", "Terms of Service", "Cookie Policy", "DMCA"];
+for (const file of everyHtmlFile(root)) {
+  const html = fs.readFileSync(file, "utf8");
+  const header = html.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
+  if (header) {
+    const external = [...header.matchAll(/href="(https?:[^"]+)"/g)].map((match) => match[1]);
+    if (external.length) fail(file, `header contains external link(s): ${external.join(", ")}`);
+    if (!/<form class="site-search"/.test(header)) fail(file, "header is missing the search bar");
+    if (!/<nav class="main-nav"/.test(header)) fail(file, "header is missing category navigation");
+  }
+  const footer = html.match(/<footer[\s\S]*?<\/footer>/)?.[0];
+  if (footer) {
+    for (const label of footerLinks) {
+      if (!footer.includes(`>${label}<`)) fail(file, `footer is missing the ${label} link`);
+    }
+  }
+}
+
 if (failures.length) {
   console.error(`Validation failed with ${failures.length} issue(s):`);
   for (const issue of failures) console.error(`- ${issue}`);
   process.exitCode = 1;
 } else {
   console.log(
-    `Validation passed: ${pages.length} game pages, ${categories.length * 24} category cards, ` +
-      `${sitemapUrls.length} sitemap URLs, and all required sections and links are valid.`,
+    `Validation passed: ${pages.length} canonical game pages, ${stubs.length} noindex duplicate stubs, ` +
+      `${categories.length * 24} category cards, ${sitemapUrls.length} sitemap URLs, ` +
+      "and all required sections, headers, footers and links are valid.",
   );
 }
