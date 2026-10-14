@@ -226,18 +226,35 @@ for (const catalogGame of categoryGames) {
     <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../../../">Home</a></li><li><a href="../../../games/${category}/">${categoryName} Games</a></li><li aria-current="page">${esc(game.title)}</li></ol></nav>
     <h1 class="game-title">${esc(game.title)}</h1>
     <section class="player-shell" aria-label="${esc(game.title)} game player">
-      <div class="player-frame"><iframe src="${esc(game.embedUrl)}" title="${esc(game.title)}" allow="autoplay; fullscreen; encrypted-media; picture-in-picture; gamepad; accelerometer; gyroscope" allowfullscreen scrolling="no"></iframe></div>
+      <div class="player-frame is-pregame"><iframe data-src="${esc(game.embedUrl)}" title="${esc(game.title)}" allow="autoplay; fullscreen; encrypted-media; picture-in-picture; gamepad; accelerometer; gyroscope" allowfullscreen scrolling="no"></iframe><div class="pregame"><img class="pregame-cover" src="${esc(game.image)}" alt="" /><div class="pregame-panel"><div class="ad-slot" data-ad="pregame"></div><button class="pregame-play" type="button">▶ Play ${esc(game.title)}</button></div></div></div>
       <div class="player-actions"><span class="player-source">Game by ${esc(game.publisher)} · Player supplied by WGPlayground</span><button class="fullscreen-button" type="button" onclick="this.closest('.player-shell').querySelector('iframe').requestFullscreen()">⛶ Fullscreen</button></div>
     </section>
+    <div class="ad-slot" data-ad="banner"></div>
     <section class="game-content-section"><h2>About ${esc(game.title)}</h2><p>${esc(about[0])}</p><p>${esc(about[1])}</p></section>
+    <div class="ad-slot" data-ad="video"></div>
     <section class="game-content-section"><h2>Controls</h2><ul class="controls-list">${controls.map((control)=>`<li>${esc(control)}</li>`).join("")}</ul><p>Follow any control prompts displayed inside the game, as individual levels or devices may introduce additional actions.</p></section>
     <section class="game-content-section"><h2>How to Play ${esc(game.title)}</h2><ol class="how-list"><li><strong>Learn the inputs</strong>Use the listed controls and watch the opening prompts before beginning your first full attempt.</li><li><strong>Game objective</strong>${esc(profile.objective)}</li><li><strong>Progression</strong>${esc(profile.progression)}</li><li><strong>Winning conditions</strong>${esc(profile.winning)}</li></ol></section>
+    <div class="ad-slot" data-ad="rectangle"></div>
     <section class="related-section"><h2>Related ${categoryName} Games</h2><div class="related-grid">${relatedMarkup}</div></section>
   </main>
   ${footerMarkup()}
   <script>document.querySelector(".current-year").textContent = new Date().getFullYear();</script>
   <script>window.gladiRecentGame = ${JSON.stringify({ title: game.title, path: routeFor(game, category).slice(1), image: game.image.replace("/w_360/h_270/", "/w_360/h_360/") }).replaceAll("<", "\\u003c")};</script>
+  <script>(() => {
+    // The game loads only after Play, so the pre-game ad gets seen. Kept inline
+    // rather than in ads.js so an ad blocker can't stop the game from starting.
+    const frame = document.querySelector(".player-frame");
+    const start = () => {
+      const iframe = frame.querySelector("iframe");
+      if (!iframe.src) iframe.src = iframe.dataset.src;
+      frame.classList.remove("is-pregame");
+      frame.querySelector(".pregame")?.remove();
+    };
+    frame.querySelector(".pregame-play").addEventListener("click", start);
+    document.querySelector(".fullscreen-button").addEventListener("click", start);
+  })();</script>
   <script src="../../../site-search.js"></script>
+  <script src="../../../ads.js"></script>
 </body>
 </html>`;
 

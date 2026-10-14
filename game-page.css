@@ -86,6 +86,9 @@ body::before {
 
 .player-frame {
   position: relative;
+  /* An explicit width stops min-height from widening the frame via the
+     aspect ratio, which pushed it past the screen edge on phones. */
+  width: 100%;
   aspect-ratio: 16 / 9;
   min-height: 420px;
 }
@@ -96,6 +99,67 @@ body::before {
   height: 100%;
   inset: 0;
   border: 0;
+}
+
+/* Pre-game screen: cover art, a 300x250 ad and the Play button. Removed once
+   the game starts. The frame grows on small screens so the ad fits. */
+.player-frame.is-pregame {
+  min-height: 400px;
+}
+
+.pregame {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pregame-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.35);
+  transform: scale(1.08);
+}
+
+.pregame-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.pregame-panel .ad-slot {
+  margin: 0;
+}
+
+.pregame-panel .ad-slot::before {
+  color: var(--text-muted);
+}
+
+.pregame-play {
+  max-width: 300px;
+  padding: 16px 26px;
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  background: var(--crimson);
+  color: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  box-shadow: 0 0 24px var(--glow);
+  cursor: pointer;
+}
+
+.pregame-play:hover,
+.pregame-play:focus-visible {
+  background: #e01c33;
+  outline: 0;
 }
 
 .player-actions {
@@ -289,6 +353,10 @@ body::before {
 
   .player-frame {
     min-height: 240px;
+  }
+
+  .player-frame.is-pregame {
+    min-height: 440px;
   }
 
   .player-actions {

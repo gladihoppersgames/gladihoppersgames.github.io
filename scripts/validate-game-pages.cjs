@@ -95,7 +95,8 @@ for (const file of pages) {
   const h1s = html.match(/<h1\b/g) || [];
   if (h1s.length !== 1) fail(file, `expected one H1, found ${h1s.length}`);
 
-  const iframe = html.match(/<iframe[^>]+src="([^"]+)"/);
+  // Game iframes hold their source in data-src until the visitor presses Play.
+  const iframe = html.match(/<iframe\b[^>]*\s(?:data-)?src="([^"]+)"/);
   if (!iframe?.[1]) fail(file, "missing iframe source");
 
   const required = [

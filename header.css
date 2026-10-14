@@ -324,3 +324,31 @@
     min-width: 0;
   }
 }
+
+/* Ad slots, filled by ads.js. Empty (and hidden) when ads don't load. */
+.ad-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 24px auto;
+  overflow: hidden;
+}
+
+.ad-slot:empty {
+  display: none;
+}
+
+.ad-slot::before {
+  content: "Advertisement";
+  margin-bottom: 4px;
+  color: #80614f;
+  font: 12px "Crimson Pro", Georgia, serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ad-slot[data-ad="video"] {
+  width: 100%;
+  max-width: 640px;
+}
