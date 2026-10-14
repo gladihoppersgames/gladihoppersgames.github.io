@@ -377,6 +377,11 @@
       box-shadow: 0 0 60px rgba(200,21,42,0.2), 0 0 120px rgba(0,0,0,0.8);
     }
 
+    /* Tall enough for the pre-game 300x250 ad and Play button on phones. */
+    .game-frame-wrapper.is-pregame {
+      padding-bottom: max(60%, 420px);
+    }
+
     .game-frame-wrapper iframe {
       position: absolute;
       inset: 0;
@@ -777,14 +782,20 @@
   <!-- GAME -->
   <main id="play">
     <div class="section-heading">⚔ PLAY GLADIHOPPERS ONLINE ⚔</div>
-    <div class="game-frame-wrapper" role="application" aria-label="Gladihoppers game">
+    <div class="game-frame-wrapper is-pregame" role="application" aria-label="Gladihoppers game">
       <iframe
-        src="https://gladihoppers.io/frame/"
+        data-src="https://gladihoppers.io/frame/"
         title="Gladihoppers - Play Free Online Gladiator Battle Game"
         allowfullscreen
         allow="autoplay; fullscreen"
-        loading="lazy"
       ></iframe>
+      <div class="pregame">
+        <img class="pregame-cover" src="og-image.png" alt="" />
+        <div class="pregame-panel">
+          <div class="ad-slot" data-ad="pregame"></div>
+          <button class="pregame-play" type="button">▶ Play Gladihoppers</button>
+        </div>
+      </div>
     </div>
     <div class="fullscreen-btn">
       <button onclick="document.querySelector('.game-frame-wrapper iframe').requestFullscreen()" aria-label="Play in fullscreen">
@@ -1217,6 +1228,19 @@
       });
     });
   </script>
+  <script>(() => {
+    // The game loads only after Play, so the pre-game ad gets seen. Kept inline
+    // rather than in ads.js so an ad blocker can't stop the game from starting.
+    const frame = document.querySelector(".game-frame-wrapper");
+    const start = () => {
+      const iframe = frame.querySelector("iframe");
+      if (!iframe.src) iframe.src = iframe.dataset.src;
+      frame.classList.remove("is-pregame");
+      frame.querySelector(".pregame")?.remove();
+    };
+    frame.querySelector(".pregame-play").addEventListener("click", start);
+    document.querySelector(".fullscreen-btn button").addEventListener("click", start);
+  })();</script>
   <script src="site-search.js"></script>
   <script src="ads.js"></script>
 </body>

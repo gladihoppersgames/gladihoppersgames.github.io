@@ -62,7 +62,10 @@
       container.appendChild(target);
       container.style.minHeight = `${size[1]}px`;
       const slot = googletag.defineSlot(network + unit, size, id);
-      if (slot) inPage.push({ slot, id });
+      if (slot) {
+        slot.addService(pubads);
+        inPage.push({ slot, id });
+      }
     });
 
     pubads.enableSingleRequest();

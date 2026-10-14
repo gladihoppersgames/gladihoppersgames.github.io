@@ -352,3 +352,60 @@
   width: 100%;
   max-width: 640px;
 }
+
+/* Pre-game screen shared by game pages and the home page: cover art, a 300x250
+   ad and the Play button. Removed once the game starts. */
+.pregame {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pregame-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.35);
+  transform: scale(1.08);
+}
+
+.pregame-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.pregame-panel .ad-slot {
+  margin: 0;
+}
+
+.pregame-panel .ad-slot::before {
+  color: #a88972;
+}
+
+.pregame-play {
+  max-width: 300px;
+  padding: 16px 26px;
+  border: 2px solid #f5c842;
+  border-radius: 6px;
+  background: #c8152a;
+  color: #f5c842;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  box-shadow: 0 0 24px rgba(200, 21, 42, 0.35);
+  cursor: pointer;
+}
+
+.pregame-play:hover,
+.pregame-play:focus-visible {
+  background: #e01c33;
+  outline: 0;
+}
